@@ -21,6 +21,7 @@ public class CustomerController {
 
     @GetMapping(path = "/{customerId}")
     public CreditCheckResponse checkCreditResponseByCustomerId(@PathVariable("customerId") Integer customerId) {
+        log.info("Customer credit score checked. - "+customerId);
         return customerService.checkCustomerCreditScore(customerId);
     }
 }
