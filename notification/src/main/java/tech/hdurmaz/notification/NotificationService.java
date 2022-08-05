@@ -15,7 +15,7 @@ public class NotificationService {
     public void send(NotificationRequest notificationRequest) {
         notificationRepository.save(
                 Notification.builder()
-                        .toCustomerId(notificationRequest.toCustomerId())
+                        .toCustomerId(notificationRequest.identityNumber())
                         .toCustomerEmail(notificationRequest.toCustomerName())
                         .sender("hdurmaz")
                         .message(notificationRequest.message())

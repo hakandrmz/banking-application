@@ -25,7 +25,7 @@ public class CreditCheckHistory {
             generator = "credit_id_sequence"
     )
     private Integer id;
-    private Integer customerId;
+    private String customerId;
     private Integer amount;
     private Date checkDate;
 }

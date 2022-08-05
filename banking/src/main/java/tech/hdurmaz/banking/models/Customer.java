@@ -1,4 +1,4 @@
-package tech.hdurmaz.banking;
+package tech.hdurmaz.banking.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -27,6 +27,7 @@ public class Customer {
     private String firstName;
     private String lastName;
     private String email;
-    private Integer salary;
+    private Integer income;
+    private String phoneNumber;
     private String identityNumber;
 }
