@@ -8,7 +8,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="notification" />
+        <module name="apigw" />
         <module name="clients" />
+        <module name="amqp" />
         <module name="credit" />
         <module name="eureka-server" />
         <module name="banking" />

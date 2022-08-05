@@ -5,13 +5,18 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {
+        "tech.hdurmaz.banking",
+        "tech.hdurmaz.amqp"
+    }
+)
 @EnableEurekaClient
 @EnableFeignClients(
         basePackages = "tech.hdurmaz.clients"
+
 )
 public class BankingApplication {
-    public static void main(String[] args){
-        SpringApplication.run(BankingApplication.class,args);
+    public static void main(String[] args) {
+        SpringApplication.run(BankingApplication.class, args);
     }
 }
