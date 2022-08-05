@@ -25,21 +25,7 @@ public class CustomerService {
 
         CreditCheckResponse response = creditClient.checkCredit(customerId);
 
-        /*
-        notificationClient
-                .sendNotification(new NotificationRequest(
-                1,
-                "Hakan Durmaz",
-                "Kredi sonucunuz: 120")
-
-        );
-        */
-
-        NotificationRequest notificationRequest = new NotificationRequest(
-                1,
-                "Hakan Durmaz",
-                "Kredi sonucunuz: 120");
-
+        NotificationRequest notificationRequest = new NotificationRequest(1, "Hakan Durmaz", "Kredi sonucunuz: 120");
 
         rabbitMQMessageProducer.publish(notificationRequest, "internal.exchange", "internal.notification.routing-key");
 
