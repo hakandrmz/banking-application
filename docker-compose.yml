@@ -118,12 +118,16 @@ services:
       - "9090:9090"
     volumes:
       - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
     networks:
       - spring
   grafana:
     image: grafana/grafana
     ports:
       - "3000:3000"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
     networks:
       - spring
 
