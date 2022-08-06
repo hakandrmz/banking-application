@@ -29,3 +29,11 @@ springdoc:
     defaultModelsExpandDepth: '-1'
     doc-expansion: 'null'
   paths-to-exclude: /swagger-resources/**
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "prometheus,health,info,metrics"
+  endpoint:
+    health:
+      show-details: always

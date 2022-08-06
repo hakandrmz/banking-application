@@ -6,8 +6,11 @@ import tech.hdurmaz.clients.credit.CreditCheckHistoryListResponse;
 import tech.hdurmaz.clients.credit.CreditCheckResponse;
 
 import java.time.Instant;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @AllArgsConstructor
@@ -56,7 +59,18 @@ public class CreditCheckService {
     }
 
     public List<CreditCheckHistoryListResponse> checkCreditAmountHistoryByIdentityNumber(String identityNumber) {
-        var result = creditCheckRepository.findAllByCustomerId(identityNumber);
+        var foundCreditHistory = creditCheckRepository.findAllByCustomerId(identityNumber);
+        List<CreditCheckHistoryListResponse> result = new LinkedList<>();
+
+        for (var a : foundCreditHistory) {
+            result.add(CreditCheckHistoryListResponse.builder()
+                    .customerId(a.getCustomerId())
+                    .amount(a.getAmount())
+                    .checkDate(a.getCheckDate())
+                    .id(a.getId())
+                    .build());
+        }
+
         return result;
     }
 }

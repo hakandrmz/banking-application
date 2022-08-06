@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import tech.hdurmaz.amqp.RabbitMQMessageProducer;
 import tech.hdurmaz.banking.dtos.*;
 import tech.hdurmaz.banking.models.Customer;
-import tech.hdurmaz.banking.exceptions.CustomerIsAlreadyExistException;
+import tech.hdurmaz.banking.exceptions.CustomerAlreadyExistException;
 import tech.hdurmaz.banking.repository.CustomerRepository;
 import tech.hdurmaz.clients.credit.CreditCheckHistoryListResponse;
 import tech.hdurmaz.clients.credit.CreditCheckResponse;
@@ -39,7 +39,7 @@ public class CustomerService {
 
     private void checkCustomerIsAlreadyExist(String identityNumber) {
         boolean exists = customerRepository.existsByIdentityNumber(identityNumber);
-        if(exists) throw new CustomerIsAlreadyExistException("Customer " + identityNumber + " is already exist.");
+        if(exists) throw new CustomerAlreadyExistException("Customer " + identityNumber + " is already exist.");
     }
 
     public CustomerCreditResponse checkCustomerCreditScore(String identityNumber) {
@@ -84,7 +84,8 @@ public class CustomerService {
     }
 
     public List<CreditCheckHistoryListResponse> getCreditScoresByCustomerId(String identityNumber) {
-        var result = creditClient.getCreditHistoryListByIdentityNumber(identityNumber);
+        var result =
+                creditClient.getCreditHistoryListByIdentityNumber(identityNumber);
         return result;
     }
 }

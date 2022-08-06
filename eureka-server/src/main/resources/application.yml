@@ -9,3 +9,11 @@ eureka:
   client:
     fetch-registry: false
     register-with-eureka: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "prometheus,health,info,metrics"
+  endpoint:
+    health:
+      show-details: always

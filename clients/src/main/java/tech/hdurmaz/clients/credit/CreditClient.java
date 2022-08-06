@@ -13,6 +13,7 @@ public interface CreditClient {
     CreditCheckResponse checkCredit(@PathVariable("identityNumber") String identityNumber,
                                            @PathVariable("salary") Integer salary);
 
-    @GetMapping(path = "api/v1/credit-check-list/{identityNumber}")
+    @GetMapping(path = "api/v1/credit-check/historyList/{identityNumber}")
     List<CreditCheckHistoryListResponse> getCreditHistoryListByIdentityNumber(@PathVariable("identityNumber") String identityNumber);
+    //8081/api/v1/credit-check/36367114630
 }

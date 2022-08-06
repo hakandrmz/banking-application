@@ -23,7 +23,7 @@ public class CreditCheckController {
         return creditCheckService.checkCreditAmount(identityNumber,salary);
     }
 
-    @GetMapping(path = "api/v1/credit-check-list/{identityNumber}")
+    @GetMapping(path = "historyList/{identityNumber}")
     List<CreditCheckHistoryListResponse> getCreditHistoryListByIdentityNumber(@PathVariable("identityNumber") String identityNumber){
         return creditCheckService.checkCreditAmountHistoryByIdentityNumber(identityNumber);
     }
