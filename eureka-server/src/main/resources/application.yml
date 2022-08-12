@@ -13,7 +13,9 @@ management:
   endpoints:
     web:
       exposure:
-        include: "prometheus,health,info,metrics"
+        include: '*'
   endpoint:
     health:
       show-details: always
+    shutdown:
+      enabled: true

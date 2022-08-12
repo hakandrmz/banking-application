@@ -75,8 +75,8 @@ services:
     environment:
       - SPRING_PROFILES_ACTIVE=docker
     networks:
-      - spring
       - postgres
+      - spring
     depends_on:
       - zipkin
       - eureka-server
@@ -90,8 +90,8 @@ services:
     environment:
       - SPRING_PROFILES_ACTIVE=docker
     networks:
-      - spring
       - postgres
+      - spring
     depends_on:
       - zipkin
       - eureka-server
@@ -105,8 +105,8 @@ services:
     environment:
       - SPRING_PROFILES_ACTIVE=docker
     networks:
-      - spring
       - postgres
+      - spring
     depends_on:
       - zipkin
       - eureka-server
@@ -118,18 +118,11 @@ services:
       - "9090:9090"
     volumes:
       - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
-    environment:
-      - SPRING_PROFILES_ACTIVE=docker
-    networks:
-      - spring
+
   grafana:
     image: grafana/grafana
     ports:
       - "3000:3000"
-    environment:
-      - SPRING_PROFILES_ACTIVE=docker
-    networks:
-      - spring
 
 networks:
   postgres:
