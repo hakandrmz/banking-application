@@ -3,9 +3,12 @@ package tech.hdurmaz.banking.service;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import tech.hdurmaz.amqp.RabbitMQMessageProducer;
-import tech.hdurmaz.banking.dtos.*;
-import tech.hdurmaz.banking.models.Customer;
+import tech.hdurmaz.banking.dtos.CustomerCreditResponse;
+import tech.hdurmaz.banking.dtos.CustomerRegistrationRequest;
+import tech.hdurmaz.banking.dtos.UpdateCustomerRequest;
+import tech.hdurmaz.banking.dtos.UpdateCustomerResponse;
 import tech.hdurmaz.banking.exceptions.CustomerAlreadyExistException;
+import tech.hdurmaz.banking.models.Customer;
 import tech.hdurmaz.banking.repository.CustomerRepository;
 import tech.hdurmaz.clients.credit.CreditCheckHistoryListResponse;
 import tech.hdurmaz.clients.credit.CreditCheckResponse;
@@ -39,7 +42,7 @@ public class CustomerService {
 
     private void checkCustomerIsAlreadyExist(String identityNumber) {
         boolean exists = customerRepository.existsByIdentityNumber(identityNumber);
-        if(exists) throw new CustomerAlreadyExistException("Customer " + identityNumber + " is already exist.");
+        if (exists) throw new CustomerAlreadyExistException("Customer " + identityNumber + " is already exist.");
     }
 
     public CustomerCreditResponse checkCustomerCreditScore(String identityNumber) {
@@ -47,7 +50,7 @@ public class CustomerService {
         Customer customer = customerRepository.findByIdentityNumber(identityNumber);
 
         CreditCheckResponse creditCheckResponse =
-                creditClient.checkCredit(identityNumber,customer.getIncome());
+                creditClient.checkCredit(identityNumber, customer.getIncome());
 
         NotificationRequest notificationRequest =
                 new NotificationRequest("",
@@ -59,13 +62,11 @@ public class CustomerService {
                 "internal.exchange",
                 "internal.notification.routing-key");
 
-        CustomerCreditResponse response = CustomerCreditResponse.builder()
+        return CustomerCreditResponse.builder()
                 .customerId(creditCheckResponse.identityNumber())
                 .message(creditCheckResponse.message())
                 .amount(creditCheckResponse.amount())
                 .build();
-
-        return response;
     }
 
     public UpdateCustomerResponse updateCustomer(UpdateCustomerRequest updateCustomerRequest) {
@@ -84,8 +85,6 @@ public class CustomerService {
     }
 
     public List<CreditCheckHistoryListResponse> getCreditScoresByCustomerId(String identityNumber) {
-        var result =
-                creditClient.getCreditHistoryListByIdentityNumber(identityNumber);
-        return result;
+        return creditClient.getCreditHistoryListByIdentityNumber(identityNumber);
     }
 }

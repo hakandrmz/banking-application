@@ -9,9 +9,9 @@ import java.time.LocalDateTime;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@ToString
 @Getter
 @Setter
-@ToString
 public class Notification {
 
     @Id
@@ -29,4 +29,5 @@ public class Notification {
     private String sender;
     private String message;
     private LocalDateTime sentAt;
+
 }

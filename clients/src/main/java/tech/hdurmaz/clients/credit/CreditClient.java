@@ -11,7 +11,7 @@ public interface CreditClient {
 
     @GetMapping(path = "api/v1/credit-check/{identityNumber}/{salary}")
     CreditCheckResponse checkCredit(@PathVariable("identityNumber") String identityNumber,
-                                           @PathVariable("salary") Integer salary);
+                                    @PathVariable("salary") Integer salary);
 
     @GetMapping(path = "api/v1/credit-check/historyList/{identityNumber}")
     List<CreditCheckHistoryListResponse> getCreditHistoryListByIdentityNumber(@PathVariable("identityNumber") String identityNumber);

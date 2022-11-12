@@ -2,7 +2,10 @@ package tech.hdurmaz.credit;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import tech.hdurmaz.clients.credit.CreditCheckHistoryListResponse;
 import tech.hdurmaz.clients.credit.CreditCheckResponse;
 
@@ -18,13 +21,14 @@ public class CreditCheckController {
 
     @GetMapping(path = "/{identityNumber}/{salary}")
     CreditCheckResponse checkCredit(@PathVariable("identityNumber") String identityNumber,
-                                    @PathVariable("salary") Integer salary){
+                                    @PathVariable("salary") Integer salary) {
         log.info("Customer credit score checked. - " + identityNumber);
-        return creditCheckService.checkCreditAmount(identityNumber,salary);
+        return creditCheckService.checkCreditAmount(identityNumber, salary);
     }
 
     @GetMapping(path = "historyList/{identityNumber}")
-    List<CreditCheckHistoryListResponse> getCreditHistoryListByIdentityNumber(@PathVariable("identityNumber") String identityNumber){
+    List<CreditCheckHistoryListResponse> getCreditHistoryListByIdentityNumber(@PathVariable("identityNumber") String identityNumber) {
         return creditCheckService.checkCreditAmountHistoryByIdentityNumber(identityNumber);
     }
+
 }
