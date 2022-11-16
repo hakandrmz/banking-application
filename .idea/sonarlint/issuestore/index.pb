@@ -1,8 +1,6 @@
 
 <
 amqp/pom.xml,3/9/39d5bf97f55ed62f85d09f9444dcd78c9eb5188e
-r
-Bbanking/src/main/java/tech/hdurmaz/banking/BankingApplication.java,5/c/5c1537104aaaefb0ff79bc15d392416164a5cb9e
 I
 prometheus/prometheus.yml,2/1/2195c72987a6b3f2c1afeaf7568ad8d407cc8eb8
 |
@@ -47,3 +45,35 @@ z
 Jbanking/src/main/java/tech/hdurmaz/banking/dtos/UpdateCustomerRequest.java,a/d/ad1500d2768c24897e00716d2812cc59bdde73c4
 H
 docker-compose-local.yml,5/7/5744a5b9d37a621a91ebd13e55624a46758c5931
+‡
+Wnotification/src/main/java/tech/hdurmaz/notification/rabbitmq/NotificationConsumer.java,e/d/ed636ae62add6324d3562af34fd42a5127315fba
+q
+Aamqp/src/main/java/tech/hdurmaz/amqp/RabbitMQMessageProducer.java,e/5/e556b9d3dd89fdbb542ae223404b473b721d8f93
+p
+@credit/src/main/java/tech/hdurmaz/credit/CreditCheckService.java,5/d/5d4dddf72699c07f9515bbef8b0cb6b208697bfe
+w
+Gbanking/src/main/java/tech/hdurmaz/banking/service/CustomerService.java,9/c/9c584924d682a13260ecda3bf66a6866ef88e9a2
+s
+Cclients/src/main/java/tech/hdurmaz/clients/credit/CreditClient.java,2/9/293e10955783daa2545d3372e852319f291782c7
+€
+Pclients/src/main/java/tech/hdurmaz/clients/notification/NotificationRequest.java,1/3/137833e949be628a0ecfc3b9ad33aed3d3310b05
+
+Oclients/src/main/java/tech/hdurmaz/clients/notification/NotificationClient.java,7/e/7e16a0886f7a75dad1052a5434bc393c788984ef
+l
+<apigw/src/main/java/tech/hdurmaz/apigw/ApiGWApplication.java,1/b/1b33165b772e9dfe848d6f1456c24666dd433fbe
+z
+Jclients/src/main/java/tech/hdurmaz/clients/credit/CreditCheckResponse.java,3/1/31040f70f724515791c44bfcb14dc0959861e22f
+…
+Uclients/src/main/java/tech/hdurmaz/clients/credit/CreditCheckHistoryListResponse.java,f/1/f1ca2eecb706d10fb9228e1700ce76c097c53969
+E
+config-server/HELP.md,e/b/ebaba7304a3b512ab5a115bf99b72523e79690e8
+H
+docker-compose-sonar.yml,c/8/c89a50abdc6b6f477f2f44da879f6698c35cff7c
+B
+config-server/mvnw,1/7/173763af57b6fde362a1515ed21f9f70eae4a329
+H
+config-server/.gitignore,7/0/700060b45b55a30aeb4a90eb5b60fa8e2bcc2fc7
+c
+3config-server/.mvn/wrapper/maven-wrapper.properties,b/0/b02081f63fe3e34af1c08ff9908f1e4413a2c793
+F
+config-server/mvnw.cmd,0/9/09d6c851d3b5e0951a6f90053fc57fac349c8d8e
