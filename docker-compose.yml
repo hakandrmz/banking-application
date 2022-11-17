@@ -36,6 +36,26 @@ services:
       ME_CONFIG_MONGODB_ADMINPASSWORD: password
       ME_CONFIG_MONGODB_SERVER: mongodb
 
+  cassandra:
+    image: cassandra:3.11.4
+    expose:
+      - 7000
+      - 7001
+      - 7199
+      - 9042
+      - 9160
+  cassandra-web:
+    image: markusgulden/cassandra-web
+    depends_on:
+      - cassandra
+    environment:
+      CASSANDRA_HOST_IPS: 127.0.0.1
+      CASSANDRA_PORT: 9042
+      CASSANDRA_USER: cassandra
+      CASSANDRA_PASSWORD: cassandra
+    ports:
+      - 3000:3000
+
   pgadmin:
     container_name: pgadmin
     image: dpage/pgadmin4
