@@ -22,6 +22,7 @@ public class PropertiesController {
 
     @GetMapping
     public Map<String,String> getEnvironments(@RequestParam String key) {
+        log.info("Property " + key + " fetch from PropertiesConfigurer");
         return configuration.getEnvironmentVariables(key);
     }
 

@@ -14,13 +14,15 @@
         <module name="amqp" />
         <module name="credit" />
         <module name="eureka-server" />
+        <module name="mail-service" />
         <module name="banking" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="config-server" options="-parameters" />
+      <module name="config-server" options="" />
+      <module name="mail-service" options="" />
     </option>
   </component>
 </project>
