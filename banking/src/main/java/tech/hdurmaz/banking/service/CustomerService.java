@@ -38,10 +38,10 @@ public class CustomerService {
 
   private void checkCustomerIsAlreadyExist(String identityNumber) {
     boolean exists = customerRepository.existsByIdentityNumber(identityNumber);
-      if (exists) {
-          throw new CustomerAlreadyExistException(
-              "Customer " + identityNumber + " is already exist.");
-      }
+    if (exists) {
+      throw new CustomerAlreadyExistException(
+          "Customer " + identityNumber + " is already exist.");
+    }
   }
 
   public CustomerCreditResponse checkCustomerCreditScore(String identityNumber) {

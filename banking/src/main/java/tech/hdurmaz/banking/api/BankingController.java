@@ -41,7 +41,8 @@ public class BankingController {
   }
 
   @PutMapping
-  public ResponseEntity<UpdateCustomerResponse> updateCustomer(@RequestBody UpdateCustomerRequest updateCustomerRequest) {
+  public ResponseEntity<UpdateCustomerResponse> updateCustomer(
+      @RequestBody UpdateCustomerRequest updateCustomerRequest) {
     log.info("Customer updated request: " + updateCustomerRequest);
     return new ResponseEntity<>(customerService.updateCustomer(updateCustomerRequest),
         HttpStatus.CREATED);
