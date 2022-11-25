@@ -1,5 +1,6 @@
 package tech.hdurmaz.banking.service;
 
+import java.util.List;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import tech.hdurmaz.amqp.RabbitMQMessageProducer;
@@ -15,76 +16,68 @@ import tech.hdurmaz.clients.credit.CreditCheckResponse;
 import tech.hdurmaz.clients.credit.CreditClient;
 import tech.hdurmaz.clients.notification.NotificationRequest;
 
-import java.util.List;
-
 @Service
 @AllArgsConstructor
 public class CustomerService {
-    private final CustomerRepository customerRepository;
-    private final CreditClient creditClient;
-    private final RabbitMQMessageProducer rabbitMQMessageProducer;
 
-    public void registerCustomer(CustomerRegistrationRequest customerRequest) {
+  private final CustomerRepository customerRepository;
+  private final CreditClient creditClient;
+  private final RabbitMQMessageProducer rabbitMQMessageProducer;
 
-        checkCustomerIsAlreadyExist(customerRequest.identityNumber());
+  public void registerCustomer(CustomerRegistrationRequest customerRequest) {
 
-        Customer customer = Customer.builder()
-                .firstName(customerRequest.firstName())
-                .lastName(customerRequest.lastName())
-                .email(customerRequest.email())
-                .income(customerRequest.income())
-                .phoneNumber(customerRequest.phoneNumber())
-                .identityNumber(customerRequest.identityNumber())
-                .build();
+    checkCustomerIsAlreadyExist(customerRequest.identityNumber());
 
-        customerRepository.save(customer);
-    }
+    Customer customer = Customer.builder().firstName(customerRequest.firstName())
+        .lastName(customerRequest.lastName()).email(customerRequest.email())
+        .income(customerRequest.income()).phoneNumber(customerRequest.phoneNumber())
+        .identityNumber(customerRequest.identityNumber()).build();
 
-    private void checkCustomerIsAlreadyExist(String identityNumber) {
-        boolean exists = customerRepository.existsByIdentityNumber(identityNumber);
-        if (exists) throw new CustomerAlreadyExistException("Customer " + identityNumber + " is already exist.");
-    }
+    customerRepository.save(customer);
+  }
 
-    public CustomerCreditResponse checkCustomerCreditScore(String identityNumber) {
+  private void checkCustomerIsAlreadyExist(String identityNumber) {
+    boolean exists = customerRepository.existsByIdentityNumber(identityNumber);
+      if (exists) {
+          throw new CustomerAlreadyExistException(
+              "Customer " + identityNumber + " is already exist.");
+      }
+  }
 
-        Customer customer = customerRepository.findByIdentityNumber(identityNumber);
+  public CustomerCreditResponse checkCustomerCreditScore(String identityNumber) {
 
-        CreditCheckResponse creditCheckResponse =
-                creditClient.checkCredit(identityNumber, customer.getIncome());
+    Customer customer = customerRepository.findByIdentityNumber(identityNumber);
 
-        NotificationRequest notificationRequest =
-                new NotificationRequest("",
-                        "Customer identity number: " + creditCheckResponse.identityNumber(),
-                        "Kredi sonucunuz: " + creditCheckResponse.amount());
+    CreditCheckResponse creditCheckResponse = creditClient.checkCredit(identityNumber,
+        customer.getIncome());
 
-        rabbitMQMessageProducer.publish(
-                notificationRequest,
-                "internal.exchange",
-                "internal.notification.routing-key");
+    NotificationRequest notificationRequest = new NotificationRequest("",
+        "Customer identity number: " + creditCheckResponse.identityNumber(),
+        "Kredi sonucunuz: " + creditCheckResponse.amount());
 
-        return CustomerCreditResponse.builder()
-                .customerId(creditCheckResponse.identityNumber())
-                .message(creditCheckResponse.message())
-                .amount(creditCheckResponse.amount())
-                .build();
-    }
+    rabbitMQMessageProducer.publish(notificationRequest, "internal.exchange",
+        "internal.notification.routing-key");
 
-    public UpdateCustomerResponse updateCustomer(UpdateCustomerRequest updateCustomerRequest) {
+    return CustomerCreditResponse.builder().customerId(creditCheckResponse.identityNumber())
+        .message(creditCheckResponse.message()).amount(creditCheckResponse.amount()).build();
+  }
 
-        checkCustomerIsAlreadyExist(updateCustomerRequest.getIdentityNumber());
+  public UpdateCustomerResponse updateCustomer(UpdateCustomerRequest updateCustomerRequest) {
 
-        Customer customer = customerRepository.getById(updateCustomerRequest.getId());
-        customer.setEmail(updateCustomerRequest.getEmail());
-        customer.setIncome(updateCustomerRequest.getIncome());
-        customer.setFirstName(updateCustomerRequest.getFirstName());
-        customer.setPhoneNumber(updateCustomerRequest.getPhoneNumber());
+    Customer customer = customerRepository.getCustomerByIdentityNumber(
+        updateCustomerRequest.getIdentityNumber());
+    customer.setEmail(updateCustomerRequest.getEmail());
+    customer.setIncome(updateCustomerRequest.getIncome());
+    customer.setFirstName(updateCustomerRequest.getFirstName());
+    customer.setPhoneNumber(updateCustomerRequest.getPhoneNumber());
 
-        customerRepository.save(customer);
+    customerRepository.save(customer);
 
-        return new UpdateCustomerResponse();
-    }
+    return UpdateCustomerResponse.builder()
+        .identityNumber(updateCustomerRequest.getIdentityNumber()).build();
+  }
 
-    public List<CreditCheckHistoryListResponse> getCreditScoresByCustomerId(String identityNumber) {
-        return creditClient.getCreditHistoryListByIdentityNumber(identityNumber);
-    }
+  public List<CreditCheckHistoryListResponse> getCreditScoresByCustomerId(String identityNumber) {
+    return creditClient.getCreditHistoryListByIdentityNumber(identityNumber);
+  }
 }

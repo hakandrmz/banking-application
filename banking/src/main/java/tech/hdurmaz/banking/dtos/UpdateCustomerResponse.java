@@ -10,11 +10,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class UpdateCustomerResponse {
-    private Integer id;
-    private String firstName;
-    private String lastName;
-    private String email;
-    private Integer income;
-    private String phoneNumber;
-    private String identityNumber;
+
+  private String identityNumber;
 }

@@ -1,0 +1,519 @@
+2022-11-25 11:27:48,154 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2022-11-25 11:27:48,157 INFO org.springframework.boot.StartupInfoLogger [main] Starting EurekaServerApplication using Java 17.0.4.1 on hdurmaz.local with PID 3659 (/Users/hdurmaz/IdeaProjects/banking-application-credit-service/eureka-server/target/classes started by hdurmaz in /Users/hdurmaz/IdeaProjects/banking-application-credit-service)
+2022-11-25 11:27:48,157 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.5, Spring v5.3.23
+2022-11-25 11:27:48,157 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-11-25 11:27:48,179 INFO org.springframework.boot.logging.DeferredLog [main] Fetching config from server at : http://localhost:8088
+2022-11-25 11:27:48,179 INFO org.springframework.boot.logging.DeferredLog [main] Located environment: name=eureka-server, profiles=[default], label=null, version=946ed481d9f3e2ede78ffb862429f8ac4c2f6e7a, state=null
+2022-11-25 11:27:48,703 INFO org.springframework.core.log.LogAccessor [main] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2022-11-25 11:27:48,709 INFO org.springframework.core.log.LogAccessor [main] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2022-11-25 11:27:48,745 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=2ee4685e-b17a-3d8b-bce6-3d88f1b77621
+2022-11-25 11:27:48,863 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 11:27:48,868 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 11:27:48,873 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 11:27:48,874 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'bindersHealthContributor' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthContributor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 11:27:48,877 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'bindersHealthIndicatorListener' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthIndicatorListener] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 11:27:48,880 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration' of type [org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration$$EnhancerBySpringCGLIB$$a951d5f6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 11:27:48,885 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'rabbitExtendedPropertiesDefaultMappingsProvider' of type [org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration$$Lambda$607/0x00000008011540e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 11:27:48,887 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'BindingHandlerAdvise' of type [org.springframework.cloud.stream.config.BindingHandlerAdvise] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 11:27:48,888 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 11:27:48,889 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 11:27:48,889 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$608/0x0000000801154300] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 11:27:48,891 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 11:27:48,895 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spelConverter' of type [org.springframework.cloud.stream.config.SpelExpressionConverterConfiguration$SpelConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 11:27:48,899 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spring.jmx-org.springframework.boot.autoconfigure.jmx.JmxProperties' of type [org.springframework.boot.autoconfigure.jmx.JmxProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 11:27:48,902 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 11:27:48,905 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 11:27:48,919 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 11:27:49,047 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8761 (http)
+2022-11-25 11:27:49,051 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8761"]
+2022-11-25 11:27:49,051 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-11-25 11:27:49,051 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-25 11:27:49,107 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-11-25 11:27:49,108 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 928 ms
+2022-11-25 11:27:49,374 WARN org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration [pool-1-thread-1] Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused; nested exception is java.net.ConnectException: Connection refused}]
+2022-11-25 11:27:49,797 INFO com.sun.jersey.server.impl.application.WebApplicationImpl [main] Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+2022-11-25 11:27:49,815 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using JSON encoding codec LegacyJacksonJson
+2022-11-25 11:27:49,815 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using JSON decoding codec LegacyJacksonJson
+2022-11-25 11:27:49,866 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using XML encoding codec XStreamXml
+2022-11-25 11:27:49,866 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using XML decoding codec XStreamXml
+2022-11-25 11:27:50,289 INFO org.springframework.core.log.LogAccessor [main] Channel 'eureka-server.springCloudBusInput' has 1 subscriber(s).
+2022-11-25 11:27:50,432 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses Jersey
+2022-11-25 11:27:50,499 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-25 11:27:50,508 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [main] Setting initial instance status as: STARTING
+2022-11-25 11:27:50,519 INFO com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2022-11-25 11:27:50,520 INFO com.netflix.discovery.DiscoveryClient [main] Client configured to neither register nor query for data.
+2022-11-25 11:27:50,523 INFO com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1669364870523 with initial instances count: 0
+2022-11-25 11:27:50,546 INFO com.netflix.eureka.DefaultEurekaServerContext [main] Initializing ...
+2022-11-25 11:27:50,547 INFO com.netflix.eureka.cluster.PeerEurekaNodes [main] Adding new peer nodes [http://localhost:8761/eureka/]
+2022-11-25 11:27:50,565 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using JSON encoding codec LegacyJacksonJson
+2022-11-25 11:27:50,565 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using JSON decoding codec LegacyJacksonJson
+2022-11-25 11:27:50,566 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using XML encoding codec XStreamXml
+2022-11-25 11:27:50,566 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using XML decoding codec XStreamXml
+2022-11-25 11:27:50,596 INFO com.netflix.eureka.cluster.PeerEurekaNodes [main] Replica node URL:  http://localhost:8761/eureka/
+2022-11-25 11:27:50,598 INFO com.netflix.eureka.registry.AbstractInstanceRegistry [main] Finished initializing remote region registries. All known remote regions: []
+2022-11-25 11:27:50,599 INFO com.netflix.eureka.DefaultEurekaServerContext [main] Initialized
+2022-11-25 11:27:50,636 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 25 endpoint(s) beneath base path '/actuator'
+2022-11-25 11:27:50,747 INFO org.springframework.integration.monitor.IntegrationMBeanExporter [main] Registering MessageChannel errorChannel
+2022-11-25 11:27:50,763 INFO org.springframework.integration.monitor.IntegrationMBeanExporter [main] Registering MessageChannel springCloudBusInput
+2022-11-25 11:27:50,773 INFO org.springframework.integration.monitor.IntegrationMBeanExporter [main] Registering MessageChannel nullChannel
+2022-11-25 11:27:50,778 INFO org.springframework.integration.monitor.IntegrationMBeanExporter [main] Registering MessageHandler _org.springframework.integration.errorLogger
+2022-11-25 11:27:50,793 INFO org.springframework.core.log.LogAccessor [main] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2022-11-25 11:27:50,793 INFO org.springframework.core.log.LogAccessor [main] Channel 'eureka-server.errorChannel' has 1 subscriber(s).
+2022-11-25 11:27:50,793 INFO org.springframework.core.log.LogAccessor [main] started bean '_org.springframework.integration.errorLogger'
+2022-11-25 11:27:50,795 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [main] Registering application EUREKA-SERVER with eureka with status UP
+2022-11-25 11:27:50,800 INFO org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap [Thread-10] isAws returned false
+2022-11-25 11:27:50,800 INFO org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap [Thread-10] Initialized server context
+2022-11-25 11:27:50,800 INFO com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl [Thread-10] Got 1 instances from neighboring DS node
+2022-11-25 11:27:50,800 INFO com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl [Thread-10] Renew threshold is: 1
+2022-11-25 11:27:50,801 INFO com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl [Thread-10] Changing status to UP
+2022-11-25 11:27:50,803 INFO org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration [Thread-10] Started Eureka Server
+2022-11-25 11:27:50,869 INFO org.springframework.cloud.stream.binder.rabbit.provisioning.RabbitExchangeQueueProvisioner [main] declaring queue for inbound: springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ, bound to: springCloudBus
+2022-11-25 11:27:50,871 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [main] Attempting to connect to: [localhost:5672]
+2022-11-25 11:27:50,873 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [main] Attempting to connect to: [localhost:5672]
+2022-11-25 11:27:50,874 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [main] Attempting to connect to: [localhost:5672]
+2022-11-25 11:27:50,883 INFO org.springframework.core.log.LogAccessor [main] Channel 'springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ.errors' has 1 subscriber(s).
+2022-11-25 11:27:50,883 INFO org.springframework.core.log.LogAccessor [main] Channel 'springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ.errors' has 2 subscriber(s).
+2022-11-25 11:27:50,884 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [main] Attempting to connect to: [localhost:5672]
+2022-11-25 11:27:50,884 INFO org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer [main] Broker not available; cannot force queue declarations during start: java.net.ConnectException: Connection refused
+2022-11-25 11:27:50,887 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-1] Attempting to connect to: [localhost:5672]
+2022-11-25 11:27:50,887 INFO org.springframework.core.log.LogAccessor [main] started bean 'inbound.springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ'
+2022-11-25 11:27:50,888 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8761"]
+2022-11-25 11:27:50,894 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8761 (http) with context path ''
+2022-11-25 11:27:50,894 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [main] Updating port to 8761
+2022-11-25 11:27:50,903 INFO org.springframework.integration.monitor.IntegrationMBeanExporter [main] Registering MessageChannel springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ.errors
+2022-11-25 11:27:50,949 INFO org.springframework.boot.StartupInfoLogger [main] Started EurekaServerApplication in 4.424 seconds (JVM running for 4.742)
+2022-11-25 11:27:50,980 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [RMI TCP Connection(3)-127.0.0.1] Attempting to connect to: [localhost:5672]
+2022-11-25 11:27:50,982 WARN org.springframework.boot.actuate.health.AbstractHealthIndicator [RMI TCP Connection(3)-127.0.0.1] Rabbit health check failed
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:602)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:725)
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:252)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2180)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2153)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2133)
+	at org.springframework.boot.actuate.amqp.RabbitHealthIndicator.getVersion(RabbitHealthIndicator.java:49)
+	at org.springframework.boot.actuate.amqp.RabbitHealthIndicator.doHealthCheck(RabbitHealthIndicator.java:44)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82)
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:94)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:41)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getLoggedHealth(HealthEndpointSupport.java:172)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:145)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateContribution(HealthEndpointSupport.java:156)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:141)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:110)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:81)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:88)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:74)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:122)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:97)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor124.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1223)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1173)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:640)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:615)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:565)
+	... 50 common frames omitted
+2022-11-25 11:27:50,983 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [RMI TCP Connection(3)-127.0.0.1] Attempting to connect to: [localhost:5672]
+2022-11-25 11:27:50,983 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(2)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-25 11:27:50,983 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(2)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2022-11-25 11:27:50,983 WARN org.springframework.boot.actuate.health.AbstractHealthIndicator [RMI TCP Connection(3)-127.0.0.1] Rabbit health check failed
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:602)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:725)
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:252)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2180)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2153)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2133)
+	at org.springframework.boot.actuate.amqp.RabbitHealthIndicator.getVersion(RabbitHealthIndicator.java:49)
+	at org.springframework.boot.actuate.amqp.RabbitHealthIndicator.doHealthCheck(RabbitHealthIndicator.java:44)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82)
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:94)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:41)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getLoggedHealth(HealthEndpointSupport.java:172)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:145)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateContribution(HealthEndpointSupport.java:156)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:141)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateContribution(HealthEndpointSupport.java:156)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:141)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:110)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:81)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:88)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:74)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:122)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:97)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor124.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1223)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1173)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:640)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:615)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:565)
+	... 52 common frames omitted
+2022-11-25 11:27:50,984 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(2)-127.0.0.1] Completed initialization in 1 ms
+2022-11-25 11:27:55,991 WARN org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-1] Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused
+2022-11-25 11:27:55,995 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-1] Restarting Consumer@1362f4: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-11-25 11:27:55,998 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-2] Attempting to connect to: [localhost:5672]
+2022-11-25 11:27:58,165 INFO com.netflix.eureka.registry.AbstractInstanceRegistry [http-nio-8761-exec-2] Registered instance MAIL-SERVER/192.168.1.30:mail-server:8084 with status UP (replication=false)
+2022-11-25 11:27:58,706 INFO com.netflix.eureka.registry.AbstractInstanceRegistry [http-nio-8761-exec-3] Registered instance MAIL-SERVER/192.168.1.30:mail-server:8084 with status UP (replication=true)
+2022-11-25 11:27:59,130 WARN zipkin2.reporter.AsyncReporter$BoundedAsyncReporter [AsyncReporter{RestTemplateSender{http://localhost:9411/api/v2/spans}}] Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2022-11-25 11:27:59,131 WARN zipkin2.reporter.AsyncReporter$BoundedAsyncReporter [AsyncReporter{RestTemplateSender{http://localhost:9411/api/v2/spans}}] Dropped 2 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused; nested exception is java.net.ConnectException: Connection refused)
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused; nested exception is java.net.ConnectException: Connection refused
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.cloud.sleuth.zipkin2.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateWrapper.java:67)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:660)
+	at org.springframework.cloud.sleuth.zipkin2.RestTemplateSender.post(RestTemplateSender.java:51)
+	at org.springframework.cloud.sleuth.zipkin2.RestTemplateSender.lambda$new$0(RestTemplateSender.java:44)
+	at org.springframework.cloud.sleuth.zipkin2.HttpSender.post(HttpSender.java:137)
+	at org.springframework.cloud.sleuth.zipkin2.HttpSender$HttpPostCall.doExecute(HttpSender.java:150)
+	at org.springframework.cloud.sleuth.zipkin2.HttpSender$HttpPostCall.doExecute(HttpSender.java:140)
+	at zipkin2.Call$Base.execute(Call.java:391)
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:299)
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:532)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:637)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:280)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:385)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:407)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057)
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 11 common frames omitted
+2022-11-25 11:28:01,106 WARN org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-2] Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused
+2022-11-25 11:28:01,106 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-2] Restarting Consumer@e7fcfda: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-11-25 11:28:01,107 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-3] Attempting to connect to: [localhost:5672]
+2022-11-25 11:28:06,211 WARN org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-3] Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused
+2022-11-25 11:28:06,212 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-3] Restarting Consumer@6c15c907: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-11-25 11:28:06,213 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-4] Attempting to connect to: [localhost:5672]
+2022-11-25 11:28:11,297 WARN org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-4] Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused
+2022-11-25 11:28:11,298 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-4] Restarting Consumer@8520e0b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-11-25 11:28:11,299 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-5] Attempting to connect to: [localhost:5672]
+2022-11-25 11:28:16,386 WARN org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-5] Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused
+2022-11-25 11:28:16,388 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-5] Restarting Consumer@4db4bee2: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-11-25 11:28:16,389 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-6] Attempting to connect to: [localhost:5672]
+2022-11-25 11:28:21,457 WARN org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-6] Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused
+2022-11-25 11:28:21,457 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-6] Restarting Consumer@4b55213e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-11-25 11:28:21,458 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-7] Attempting to connect to: [localhost:5672]
+2022-11-25 11:28:26,536 WARN org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-7] Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused
+2022-11-25 11:28:26,537 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-7] Restarting Consumer@4a483568: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-11-25 11:28:26,538 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-8] Attempting to connect to: [localhost:5672]
+2022-11-25 11:28:31,622 WARN org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-8] Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused
+2022-11-25 11:28:31,622 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-8] Restarting Consumer@5a3889c6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-11-25 11:28:31,623 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-9] Attempting to connect to: [localhost:5672]
+2022-11-25 11:28:36,710 WARN org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-9] Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused
+2022-11-25 11:28:36,712 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-9] Restarting Consumer@12c62f96: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-11-25 11:28:36,713 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-10] Attempting to connect to: [localhost:5672]
+2022-11-25 11:28:41,775 WARN org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-10] Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused
+2022-11-25 11:28:41,775 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-10] Restarting Consumer@3ff000e4: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-11-25 11:28:41,776 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-11] Attempting to connect to: [localhost:5672]
+2022-11-25 11:28:46,858 WARN org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-11] Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused
+2022-11-25 11:28:46,858 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-11] Restarting Consumer@6c2a4477: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-11-25 11:28:46,859 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-12] Attempting to connect to: [localhost:5672]
+2022-11-25 11:28:50,805 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 0ms
+2022-11-25 11:28:51,973 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-12] Restarting Consumer@f9f488c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-11-25 11:28:51,974 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-13] Attempting to connect to: [localhost:5672]
+2022-11-25 11:28:52,011 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-13] Created new connection: rabbitConnectionFactory#417b3642:18/SimpleConnection@128034d9 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 50693]
+2022-11-25 11:28:52,015 INFO org.springframework.amqp.rabbit.core.RabbitAdmin [springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ-13] Auto-declaring a non-durable, auto-delete, or exclusive Queue (springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2022-11-25 11:29:15,479 INFO com.netflix.eureka.registry.AbstractInstanceRegistry [http-nio-8761-exec-10] Registered instance MAIL-SERVER/192.168.1.30:mail-server:8084 with status DOWN (replication=false)
+2022-11-25 11:29:15,991 INFO com.netflix.eureka.registry.AbstractInstanceRegistry [http-nio-8761-exec-1] Registered instance MAIL-SERVER/192.168.1.30:mail-server:8084 with status DOWN (replication=true)
+2022-11-25 11:29:19,329 INFO com.netflix.eureka.registry.AbstractInstanceRegistry [http-nio-8761-exec-2] Cancelled instance MAIL-SERVER/192.168.1.30:mail-server:8084 (replication=false)
+2022-11-25 11:29:19,846 WARN com.netflix.eureka.registry.AbstractInstanceRegistry [http-nio-8761-exec-5] DS: Registry: cancel failed because Lease is not registered for: MAIL-SERVER/192.168.1.30:mail-server:8084
+2022-11-25 11:29:19,846 INFO com.netflix.eureka.resources.InstanceResource [http-nio-8761-exec-5] Not Found (Cancel): MAIL-SERVER - 192.168.1.30:mail-server:8084
+2022-11-25 11:29:19,847 WARN com.netflix.eureka.cluster.ReplicationTask [TaskBatchingWorker-target_localhost-1] The replication of task MAIL-SERVER/192.168.1.30:mail-server:8084:Cancel@localhost failed with response code 404
+2022-11-25 11:29:19,848 WARN com.netflix.eureka.cluster.PeerEurekaNode$2 [TaskBatchingWorker-target_localhost-1] MAIL-SERVER/192.168.1.30:mail-server:8084:Cancel@localhost: missing entry.
+2022-11-25 11:29:23,656 INFO com.netflix.eureka.registry.AbstractInstanceRegistry [http-nio-8761-exec-7] Registered instance MAIL-SERVER/192.168.1.30:mail-server:8084 with status UP (replication=false)
+2022-11-25 11:29:24,172 INFO com.netflix.eureka.registry.AbstractInstanceRegistry [http-nio-8761-exec-8] Registered instance MAIL-SERVER/192.168.1.30:mail-server:8084 with status UP (replication=true)
+2022-11-25 11:29:50,807 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 1ms
+2022-11-25 11:30:50,806 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 0ms
+2022-11-25 11:31:50,807 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 1ms
+2022-11-25 11:32:50,811 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 4ms
+2022-11-25 11:33:50,816 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 5ms
+2022-11-25 11:34:50,820 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 4ms
+2022-11-25 11:35:50,820 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 0ms
+2022-11-25 11:36:50,824 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 5ms
+2022-11-25 11:37:50,826 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 1ms
+2022-11-25 11:38:50,831 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 5ms
+2022-11-25 11:39:50,831 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 1ms
+2022-11-25 11:40:50,836 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 4ms
+2022-11-25 11:41:50,836 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 1ms
+2022-11-25 11:42:50,599 INFO com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] Current renewal threshold is : 3
+2022-11-25 11:42:50,841 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 4ms
+2022-11-25 11:43:50,846 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 5ms
+2022-11-25 11:44:50,847 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 2ms
+2022-11-25 11:45:50,852 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 5ms
+2022-11-25 11:46:50,857 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 5ms
+2022-11-25 11:47:50,861 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 5ms
+2022-11-25 11:48:50,871 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 2ms
+2022-11-25 11:49:50,876 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 5ms
+2022-11-25 11:50:50,881 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 4ms
+2022-11-25 11:51:50,885 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 4ms
+2022-11-25 11:52:50,890 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 5ms
+2022-11-25 11:53:50,900 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 9ms
+2022-11-25 11:54:50,906 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 6ms
+2022-11-25 11:55:50,911 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 5ms
+2022-11-25 11:56:50,915 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 4ms
+2022-11-25 11:57:50,605 INFO com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] Current renewal threshold is : 3
+2022-11-25 11:57:50,919 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 4ms
+2022-11-25 11:58:50,920 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 0ms
+2022-11-25 11:59:50,925 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 5ms
+2022-11-25 12:00:50,930 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 5ms
+2022-11-25 12:01:50,930 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 0ms
+2022-11-25 12:02:50,935 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 5ms
+2022-11-25 12:03:50,936 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 1ms
+2022-11-25 12:04:50,946 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 9ms
+2022-11-25 12:05:50,955 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 9ms
+2022-11-25 12:06:50,956 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 1ms
+2022-11-25 12:07:50,964 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 8ms
+2022-11-25 12:08:50,966 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 1ms
+2022-11-25 12:09:55,376 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 10ms
+2022-11-25 12:10:57,016 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 5ms
+2022-11-25 12:11:57,022 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 5ms
+2022-11-25 12:12:56,639 INFO com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] Current renewal threshold is : 3
+2022-11-25 12:12:57,024 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 1ms
+2022-11-25 12:13:57,027 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 2ms
+2022-11-25 12:14:57,031 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 3ms
+2022-11-25 12:15:57,037 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 5ms
+2022-11-25 12:16:57,046 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 8ms
+2022-11-25 12:17:57,052 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 5ms
+2022-11-25 12:18:57,057 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 4ms
+2022-11-25 12:19:57,065 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 7ms
+2022-11-25 12:20:57,071 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 5ms
+2022-11-25 12:22:01,067 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 2ms
+2022-11-25 12:23:05,151 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 6ms
+2022-11-25 12:24:08,733 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 3ms
+2022-11-25 12:25:19,533 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 0ms
+2022-11-25 12:26:24,291 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 10ms
+2022-11-25 12:27:30,620 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 6ms
+2022-11-25 12:28:36,728 INFO com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] Current renewal threshold is : 3
+2022-11-25 12:28:37,191 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 4ms
+2022-11-25 12:29:43,394 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 1ms
+2022-11-25 12:30:51,015 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 8ms
+2022-11-25 12:31:54,736 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 2ms
+2022-11-25 12:32:58,555 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 10ms
+2022-11-25 12:34:05,739 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 4ms
+2022-11-25 12:35:18,371 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 9ms
+2022-11-25 12:38:10,723 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 9ms
+2022-11-25 12:44:01,729 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 8ms
+2022-11-25 12:45:13,569 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 5ms
+2022-11-25 12:46:36,766 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 4ms
+2022-11-25 12:47:40,870 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 10ms
+2022-11-25 12:48:45,404 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 1ms
+2022-11-25 12:49:50,897 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 5ms
+2022-11-25 12:50:55,652 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 5ms
+2022-11-25 12:52:07,345 INFO com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] Current renewal threshold is : 3
+2022-11-25 12:52:07,893 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 4ms
+2022-11-25 12:53:14,818 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 1ms
+2022-11-25 12:54:23,384 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 5ms
+2022-11-25 12:54:53,270 INFO org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration$1 [Thread-2] Flushing remaining spans on shutdown
+2022-11-25 12:54:53,271 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [SpringApplicationShutdownHook] Unregistering application EUREKA-SERVER with eureka with status DOWN
+2022-11-25 12:54:53,288 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer [SpringApplicationShutdownHook] Waiting for workers to finish.
+2022-11-25 12:54:53,290 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer [SpringApplicationShutdownHook] Successfully waited for workers to finish.
+2022-11-25 12:54:53,290 INFO org.springframework.core.log.LogAccessor [SpringApplicationShutdownHook] stopped bean 'inbound.springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ'
+2022-11-25 12:54:53,292 INFO org.springframework.core.log.LogAccessor [SpringApplicationShutdownHook] Channel 'eureka-server.springCloudBus.anonymous.ut_foRLwQUWssugSg5c6fQ.errors' has 1 subscriber(s).
+2022-11-25 12:54:53,293 INFO org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap [SpringApplicationShutdownHook] Shutting down Eureka Server..
+2022-11-25 12:54:53,295 INFO com.netflix.eureka.DefaultEurekaServerContext [SpringApplicationShutdownHook] Shutting down ...
+2022-11-25 12:54:53,295 INFO com.netflix.servo.monitor.StatsMonitor [SpringApplicationShutdownHook] Attempting to get the value for an expired monitor: eurekaServer.replication.batchSize.Will start computing stats again.
+2022-11-25 12:54:53,295 INFO com.netflix.servo.monitor.StatsMonitor [SpringApplicationShutdownHook] Attempting to get the value for an expired monitor: eurekaServer.replication.executionTime.Will start computing stats again.
+2022-11-25 12:54:53,296 INFO com.netflix.servo.monitor.StatsMonitor [SpringApplicationShutdownHook] Attempting to get the value for an expired monitor: eurekaServer.replication.executionTime.Will start computing stats again.
+2022-11-25 12:54:53,296 INFO com.netflix.servo.monitor.StatsMonitor [SpringApplicationShutdownHook] Attempting to get the value for an expired monitor: eurekaServer.replication.batchSize.Will start computing stats again.
+2022-11-25 12:54:53,301 INFO com.netflix.eureka.DefaultEurekaServerContext [SpringApplicationShutdownHook] Shut down
+2022-11-25 12:54:53,302 INFO org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap [SpringApplicationShutdownHook] Eureka Service is now shutdown...
+2022-11-25 12:54:53,303 INFO org.springframework.core.log.LogAccessor [SpringApplicationShutdownHook] Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2022-11-25 12:54:53,304 INFO org.springframework.core.log.LogAccessor [SpringApplicationShutdownHook] Channel 'eureka-server.errorChannel' has 0 subscriber(s).
+2022-11-25 12:54:53,304 INFO org.springframework.core.log.LogAccessor [SpringApplicationShutdownHook] stopped bean '_org.springframework.integration.errorLogger'
+2022-11-25 12:54:53,305 INFO com.netflix.eureka.DefaultEurekaServerContext [SpringApplicationShutdownHook] Shutting down ...
+2022-11-25 12:54:53,307 INFO com.netflix.eureka.DefaultEurekaServerContext [SpringApplicationShutdownHook] Shut down
+2022-11-25 12:54:54,189 INFO com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] Shutting down DiscoveryClient ...
+2022-11-25 12:54:54,190 INFO com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] Completed shut down of DiscoveryClient
+2022-11-25 23:33:01,576 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2022-11-25 23:33:01,578 INFO org.springframework.boot.StartupInfoLogger [main] Starting EurekaServerApplication using Java 17.0.4.1 on hdurmaz.local with PID 37287 (/Users/hdurmaz/IdeaProjects/banking-application-credit-service/eureka-server/target/classes started by hdurmaz in /Users/hdurmaz/IdeaProjects/banking-application-credit-service)
+2022-11-25 23:33:01,579 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.5, Spring v5.3.23
+2022-11-25 23:33:01,579 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-11-25 23:33:01,593 INFO org.springframework.boot.logging.DeferredLog [main] Fetching config from server at : http://localhost:8088
+2022-11-25 23:33:01,593 INFO org.springframework.boot.logging.DeferredLog [main] Located environment: name=eureka-server, profiles=[default], label=null, version=946ed481d9f3e2ede78ffb862429f8ac4c2f6e7a, state=null
+2022-11-25 23:33:02,123 INFO org.springframework.core.log.LogAccessor [main] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2022-11-25 23:33:02,130 INFO org.springframework.core.log.LogAccessor [main] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2022-11-25 23:33:02,171 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=2ee4685e-b17a-3d8b-bce6-3d88f1b77621
+2022-11-25 23:33:02,289 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 23:33:02,294 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 23:33:02,299 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 23:33:02,301 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'bindersHealthContributor' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthContributor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 23:33:02,304 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'bindersHealthIndicatorListener' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthIndicatorListener] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 23:33:02,307 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration' of type [org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration$$EnhancerBySpringCGLIB$$a951d5f6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 23:33:02,312 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'rabbitExtendedPropertiesDefaultMappingsProvider' of type [org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration$$Lambda$607/0x00000008011540a0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 23:33:02,314 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'BindingHandlerAdvise' of type [org.springframework.cloud.stream.config.BindingHandlerAdvise] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 23:33:02,315 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 23:33:02,316 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 23:33:02,316 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$608/0x00000008011542c0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 23:33:02,318 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 23:33:02,322 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spelConverter' of type [org.springframework.cloud.stream.config.SpelExpressionConverterConfiguration$SpelConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 23:33:02,325 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spring.jmx-org.springframework.boot.autoconfigure.jmx.JmxProperties' of type [org.springframework.boot.autoconfigure.jmx.JmxProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 23:33:02,329 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 23:33:02,332 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 23:33:02,347 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-25 23:33:02,488 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8761 (http)
+2022-11-25 23:33:02,491 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8761"]
+2022-11-25 23:33:02,491 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-11-25 23:33:02,491 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-25 23:33:02,549 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-11-25 23:33:02,549 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 955 ms
+2022-11-25 23:33:03,285 INFO com.sun.jersey.server.impl.application.WebApplicationImpl [main] Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+2022-11-25 23:33:03,302 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using JSON encoding codec LegacyJacksonJson
+2022-11-25 23:33:03,303 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using JSON decoding codec LegacyJacksonJson
+2022-11-25 23:33:03,351 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using XML encoding codec XStreamXml
+2022-11-25 23:33:03,352 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using XML decoding codec XStreamXml
+2022-11-25 23:33:03,760 INFO org.springframework.core.log.LogAccessor [main] Channel 'eureka-server.springCloudBusInput' has 1 subscriber(s).
+2022-11-25 23:33:03,905 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses Jersey
+2022-11-25 23:33:03,961 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-25 23:33:03,968 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [main] Setting initial instance status as: STARTING
+2022-11-25 23:33:03,979 INFO com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2022-11-25 23:33:03,979 INFO com.netflix.discovery.DiscoveryClient [main] Client configured to neither register nor query for data.
+2022-11-25 23:33:03,983 INFO com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1669408383982 with initial instances count: 0
+2022-11-25 23:33:04,002 INFO com.netflix.eureka.DefaultEurekaServerContext [main] Initializing ...
+2022-11-25 23:33:04,003 INFO com.netflix.eureka.cluster.PeerEurekaNodes [main] Adding new peer nodes [http://localhost:8761/eureka/]
+2022-11-25 23:33:04,019 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using JSON encoding codec LegacyJacksonJson
+2022-11-25 23:33:04,019 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using JSON decoding codec LegacyJacksonJson
+2022-11-25 23:33:04,019 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using XML encoding codec XStreamXml
+2022-11-25 23:33:04,019 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using XML decoding codec XStreamXml
+2022-11-25 23:33:04,053 INFO com.netflix.eureka.cluster.PeerEurekaNodes [main] Replica node URL:  http://localhost:8761/eureka/
+2022-11-25 23:33:04,056 INFO com.netflix.eureka.registry.AbstractInstanceRegistry [main] Finished initializing remote region registries. All known remote regions: []
+2022-11-25 23:33:04,057 INFO com.netflix.eureka.DefaultEurekaServerContext [main] Initialized
+2022-11-25 23:33:04,090 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 25 endpoint(s) beneath base path '/actuator'
+2022-11-25 23:33:04,190 INFO org.springframework.integration.monitor.IntegrationMBeanExporter [main] Registering MessageChannel errorChannel
+2022-11-25 23:33:04,208 INFO org.springframework.integration.monitor.IntegrationMBeanExporter [main] Registering MessageChannel springCloudBusInput
+2022-11-25 23:33:04,217 INFO org.springframework.integration.monitor.IntegrationMBeanExporter [main] Registering MessageChannel nullChannel
+2022-11-25 23:33:04,223 INFO org.springframework.integration.monitor.IntegrationMBeanExporter [main] Registering MessageHandler _org.springframework.integration.errorLogger
+2022-11-25 23:33:04,237 INFO org.springframework.core.log.LogAccessor [main] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2022-11-25 23:33:04,237 INFO org.springframework.core.log.LogAccessor [main] Channel 'eureka-server.errorChannel' has 1 subscriber(s).
+2022-11-25 23:33:04,237 INFO org.springframework.core.log.LogAccessor [main] started bean '_org.springframework.integration.errorLogger'
+2022-11-25 23:33:04,240 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [main] Registering application EUREKA-SERVER with eureka with status UP
+2022-11-25 23:33:04,248 INFO org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap [Thread-10] isAws returned false
+2022-11-25 23:33:04,248 INFO org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap [Thread-10] Initialized server context
+2022-11-25 23:33:04,249 INFO com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl [Thread-10] Got 1 instances from neighboring DS node
+2022-11-25 23:33:04,249 INFO com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl [Thread-10] Renew threshold is: 1
+2022-11-25 23:33:04,249 INFO com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl [Thread-10] Changing status to UP
+2022-11-25 23:33:04,251 INFO org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration [Thread-10] Started Eureka Server
+2022-11-25 23:33:04,319 INFO org.springframework.cloud.stream.binder.rabbit.provisioning.RabbitExchangeQueueProvisioner [main] declaring queue for inbound: springCloudBus.anonymous.GRyXI3RmTN2Rqn3isJdFsw, bound to: springCloudBus
+2022-11-25 23:33:04,321 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [main] Attempting to connect to: [localhost:5672]
+2022-11-25 23:33:04,351 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [main] Created new connection: rabbitConnectionFactory#e2d9923:0/SimpleConnection@51e513b7 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 57531]
+2022-11-25 23:33:04,393 INFO org.springframework.core.log.LogAccessor [main] Channel 'springCloudBus.anonymous.GRyXI3RmTN2Rqn3isJdFsw.errors' has 1 subscriber(s).
+2022-11-25 23:33:04,393 INFO org.springframework.core.log.LogAccessor [main] Channel 'springCloudBus.anonymous.GRyXI3RmTN2Rqn3isJdFsw.errors' has 2 subscriber(s).
+2022-11-25 23:33:04,404 INFO org.springframework.core.log.LogAccessor [main] started bean 'inbound.springCloudBus.anonymous.GRyXI3RmTN2Rqn3isJdFsw'
+2022-11-25 23:33:04,404 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8761"]
+2022-11-25 23:33:04,411 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8761 (http) with context path ''
+2022-11-25 23:33:04,412 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [main] Updating port to 8761
+2022-11-25 23:33:04,422 INFO org.springframework.integration.monitor.IntegrationMBeanExporter [main] Registering MessageChannel springCloudBus.anonymous.GRyXI3RmTN2Rqn3isJdFsw.errors
+2022-11-25 23:33:04,463 INFO org.springframework.boot.StartupInfoLogger [main] Started EurekaServerApplication in 4.404 seconds (JVM running for 4.688)
+2022-11-25 23:33:04,547 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(3)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-25 23:33:04,547 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2022-11-25 23:33:04,548 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Completed initialization in 1 ms
+2022-11-25 23:34:04,257 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 0ms
+2022-11-25 23:35:04,265 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 4ms
+2022-11-25 23:36:04,267 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 2ms
+2022-11-25 23:37:04,269 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 1ms
+2022-11-25 23:38:04,273 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 3ms
+2022-11-25 23:39:04,276 INFO com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask [Eureka-EvictionTimer] Running the evict task with compensationTime 2ms
+2022-11-25 23:39:06,143 INFO org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration$1 [Thread-2] Flushing remaining spans on shutdown
+2022-11-25 23:39:06,146 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [SpringApplicationShutdownHook] Unregistering application EUREKA-SERVER with eureka with status DOWN
+2022-11-25 23:39:06,178 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer [SpringApplicationShutdownHook] Waiting for workers to finish.
+2022-11-25 23:39:06,751 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer [SpringApplicationShutdownHook] Successfully waited for workers to finish.
+2022-11-25 23:39:06,751 INFO org.springframework.core.log.LogAccessor [SpringApplicationShutdownHook] stopped bean 'inbound.springCloudBus.anonymous.GRyXI3RmTN2Rqn3isJdFsw'
+2022-11-25 23:39:06,758 INFO org.springframework.core.log.LogAccessor [SpringApplicationShutdownHook] Channel 'eureka-server.springCloudBus.anonymous.GRyXI3RmTN2Rqn3isJdFsw.errors' has 1 subscriber(s).
+2022-11-25 23:39:06,760 INFO org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap [SpringApplicationShutdownHook] Shutting down Eureka Server..
+2022-11-25 23:39:06,764 INFO com.netflix.eureka.DefaultEurekaServerContext [SpringApplicationShutdownHook] Shutting down ...
+2022-11-25 23:39:06,772 INFO com.netflix.eureka.DefaultEurekaServerContext [SpringApplicationShutdownHook] Shut down
+2022-11-25 23:39:06,772 INFO org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap [SpringApplicationShutdownHook] Eureka Service is now shutdown...
+2022-11-25 23:39:06,773 INFO org.springframework.core.log.LogAccessor [SpringApplicationShutdownHook] Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2022-11-25 23:39:06,773 INFO org.springframework.core.log.LogAccessor [SpringApplicationShutdownHook] Channel 'eureka-server.errorChannel' has 0 subscriber(s).
+2022-11-25 23:39:06,773 INFO org.springframework.core.log.LogAccessor [SpringApplicationShutdownHook] stopped bean '_org.springframework.integration.errorLogger'
+2022-11-25 23:39:06,774 INFO com.netflix.eureka.DefaultEurekaServerContext [SpringApplicationShutdownHook] Shutting down ...
+2022-11-25 23:39:06,777 INFO com.netflix.eureka.DefaultEurekaServerContext [SpringApplicationShutdownHook] Shut down
+2022-11-25 23:39:07,808 INFO com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] Shutting down DiscoveryClient ...
+2022-11-25 23:39:07,810 INFO com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] Completed shut down of DiscoveryClient

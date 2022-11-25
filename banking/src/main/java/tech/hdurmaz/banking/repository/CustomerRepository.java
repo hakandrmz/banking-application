@@ -8,4 +8,5 @@ public interface CustomerRepository extends JpaRepository<Customer, Integer> {
 
     Customer findByIdentityNumber(String identityNumber);
 
+    Customer getCustomerByIdentityNumber(String identityNumber);
 }
