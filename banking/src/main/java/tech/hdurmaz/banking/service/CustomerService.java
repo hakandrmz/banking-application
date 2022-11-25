@@ -2,6 +2,7 @@ package tech.hdurmaz.banking.service;
 
 import java.util.List;
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import tech.hdurmaz.amqp.RabbitMQMessageProducer;
 import tech.hdurmaz.banking.dtos.CustomerCreditResponse;
@@ -18,6 +19,7 @@ import tech.hdurmaz.clients.notification.NotificationRequest;
 
 @Service
 @AllArgsConstructor
+@Slf4j
 public class CustomerService {
 
   private final CustomerRepository customerRepository;
@@ -39,8 +41,8 @@ public class CustomerService {
   private void checkCustomerIsAlreadyExist(String identityNumber) {
     boolean exists = customerRepository.existsByIdentityNumber(identityNumber);
     if (exists) {
-      throw new CustomerAlreadyExistException(
-          "Customer " + identityNumber + " is already exist.");
+      log.error("Customer " + identityNumber + " is already exist.");
+      throw new CustomerAlreadyExistException("Customer " + identityNumber + " is already exist.");
     }
   }
 

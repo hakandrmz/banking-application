@@ -32,14 +32,31 @@
         </rollingPolicy>
     </appender>
 
+    <appender name="EMAIL" class="ch.qos.logback.classic.net.SMTPAppender">
+        <smtpHost>smtp.gmail.com</smtpHost>
+        <smtpPort>465</smtpPort>
+        <SSL>true</SSL>
+        <username>hakandrmz18@gmail.com</username>
+        <password>omxjiwosvgbembjp</password>
+        <to>durmazhakan@icloud.com</to>
+        <to>durmazhakan@yahoo.com</to>
+        <to>hakandurmz@hotmail.com</to>
+        <from>hakandrmz18@gmail.com</from>
+        <subject>${APPLICATION_NAME}: %logger{20} - %m</subject>
+        <layout class="ch.qos.logback.classic.html.HTMLLayout"/>
+        <!--    <layout class="ch.qos.logback.classic.PatternLayout">-->
+        <!--          <Pattern>%d{HH:mm:ss.SSS} %-4relative %-5level %logger{35} - %msg%n</Pattern>-->
+        <!--      <pattern>%date %-5level %logger - %message%n</pattern>-->
+        <!--      <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>-->
+        <!--      <pattern>%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</pattern>-->
+        <!--    </layout>-->
+
+    </appender>
+
     <root level="info">
+        <appender-ref ref="EMAIL"/>
         <appender-ref ref="RollingFile" />
         <appender-ref ref="Console" />
     </root>
-
-    <logger name="tech.hdurmaz" level="trace" additivity="false">
-        <appender-ref ref="RollingFile" />
-        <appender-ref ref="Console" />
-    </logger>
 
 </configuration>
