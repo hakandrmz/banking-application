@@ -198,3 +198,5 @@ buildNumber.properties
 
 /.idea/
 /.idea
+.idea/vcs.xml
+.DS_Store
