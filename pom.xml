@@ -1,89 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-
-  <groupId>tech.hdurmaz</groupId>
   <artifactId>banking-application</artifactId>
-  <packaging>pom</packaging>
-  <version>1.0-SNAPSHOT</version>
-
-  <modules>
-    <module>banking</module>
-    <module>credit</module>
-    <module>eureka-server</module>
-    <module>clients</module>
-    <module>notification</module>
-    <module>apigw</module>
-    <module>amqp</module>
-    <module>mail-service</module>
-    <module>config-server</module>
-  </modules>
-
-  <name>banking-application</name>
-  <url>http://www.example.com</url>
-
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>17</maven.compiler.source>
-    <maven.compiler.target>17</maven.compiler.target>
-    <spring.boot.maven.plugin.version>2.7.5</spring.boot.maven.plugin.version>
-    <spring.boot.dependencies.version>2.7.5</spring.boot.dependencies.version>
-    <spring.cloud-version>2021.0.5</spring.cloud-version>
-    <image>hdurmaz/${project.artifactId}:${project.version}</image>
-  </properties>
-
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-dependencies</artifactId>
-        <version>${spring.boot.dependencies.version}</version>
-        <scope>import</scope>
-        <type>pom</type>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-dependencies</artifactId>
-        <version>${spring.cloud-version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
-
-  <dependencies>
-    <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-test</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-openfeign</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>ch.qos.logback</groupId>
-      <artifactId>logback-core</artifactId>
-      <version>1.2.11</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-mail</artifactId>
-    </dependency>
-  </dependencies>
 
   <build>
     <pluginManagement>
       <plugins>
         <plugin>
-          <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-maven-plugin</artifactId>
-          <version>2.7.5</version>
           <executions>
             <execution>
               <goals>
@@ -91,14 +17,16 @@
               </goals>
             </execution>
           </executions>
+          <groupId>org.springframework.boot</groupId>
+          <version>2.7.5</version>
         </plugin>
         <plugin>
-          <groupId>com.google.cloud.tools</groupId>
           <artifactId>jib-maven-plugin</artifactId>
-          <version>3.1.4</version>
           <configuration>
             <from>
-              <image>eclipse-temurin:17@sha256:2b47a8ea946ce1e5365a1562414ed576e378b7b670cadff3fb98ebecf2890cdc</image>
+              <image>
+                eclipse-temurin:17@sha256:2b47a8ea946ce1e5365a1562414ed576e378b7b670cadff3fb98ebecf2890cdc
+              </image>
               <platforms>
                 <platform>
                   <architecture>arm64</architecture>
@@ -118,25 +46,100 @@
           </configuration>
           <executions>
             <execution>
-              <phase>package</phase>
               <goals>
                 <goal>build</goal>
               </goals>
+              <phase>package</phase>
             </execution>
           </executions>
+          <groupId>com.google.cloud.tools</groupId>
+          <version>3.1.4</version>
         </plugin>
       </plugins>
     </pluginManagement>
     <plugins>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.0</version>
         <configuration>
           <source>17</source>
           <target>17</target>
         </configuration>
+        <groupId>org.apache.maven.plugins</groupId>
+        <version>3.8.0</version>
       </plugin>
     </plugins>
   </build>
+  <dependencies>
+    <dependency>
+      <artifactId>lombok</artifactId>
+      <groupId>org.projectlombok</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <groupId>org.springframework.boot</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>spring-cloud-starter-openfeign</artifactId>
+      <groupId>org.springframework.cloud</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>logback-core</artifactId>
+      <groupId>ch.qos.logback</groupId>
+      <version>1.2.11</version>
+    </dependency>
+    <dependency>
+      <artifactId>spring-boot-starter-mail</artifactId>
+      <groupId>org.springframework.boot</groupId>
+    </dependency>
+  </dependencies>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <groupId>org.springframework.boot</groupId>
+        <scope>import</scope>
+        <type>pom</type>
+        <version>${spring.boot.dependencies.version}</version>
+      </dependency>
+      <dependency>
+        <artifactId>spring-cloud-dependencies</artifactId>
+        <groupId>org.springframework.cloud</groupId>
+        <scope>import</scope>
+        <type>pom</type>
+        <version>${spring.cloud-version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+  <groupId>tech.hdurmaz</groupId>
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <modules>
+    <module>banking</module>
+    <module>credit</module>
+    <module>eureka-server</module>
+    <module>clients</module>
+    <module>notification</module>
+    <module>apigw</module>
+    <module>amqp</module>
+    <module>mail-service</module>
+    <module>config-server</module>
+  </modules>
+  <name>banking-application</name>
+
+  <packaging>pom</packaging>
+
+  <properties>
+    <image>hdurmaz/${project.artifactId}:${project.version}</image>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <spring.boot.dependencies.version>2.7.5</spring.boot.dependencies.version>
+    <spring.boot.maven.plugin.version>2.7.5</spring.boot.maven.plugin.version>
+    <spring.cloud-version>2021.0.5</spring.cloud-version>
+  </properties>
+
+  <url>http://www.example.com</url>
+
+  <version>1.0-SNAPSHOT</version>
 </project>

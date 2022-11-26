@@ -13,7 +13,7 @@ services:
     networks:
       - postgres
     restart: unless-stopped
-    
+
   mongodb:
     image: mongo:latest # use the latest image.
     container_name: mongodb
