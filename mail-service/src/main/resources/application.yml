@@ -1,0 +1,13 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: mail-server
+  config:
+    import: optional:configserver:http://localhost:8088
+  mail:
+    host: smtp.gmail.com
+    username: hakandrmz18@gmail.com
+    password: omxjiwosvgbembjp
+    port: '587'
+

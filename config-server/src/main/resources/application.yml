@@ -1,0 +1,25 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/hakandrmz/config-server-repo
+          clone-on-start: true
+          default-label: master
+          username: hakandrmz
+          password: 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
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true
