@@ -1,6 +1,8 @@
 ## Used Technologies
 
-### Spring Web
+### Spring Cloud Config
+
+### SonarQube Continuous Code Quality
 
 ### Spring Data JPA
 
@@ -24,7 +26,7 @@
 
 ### ModelMapper
 
-### Lombok
+### Logback
 
 ### Validation
 
@@ -42,4 +44,5 @@
 
 ### Jib
 
+### Java Mail Server
 

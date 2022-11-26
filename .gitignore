@@ -177,11 +177,6 @@ buildNumber.properties
 *Db.properties
 *Db.script
 
-# logs
-/stacktrace.log
-/test/reports
-/logs
-
 # project release file
 /*.war
 
