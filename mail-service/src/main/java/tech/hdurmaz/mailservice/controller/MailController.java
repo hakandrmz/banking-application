@@ -21,9 +21,6 @@ public class MailController {
 
   @PostMapping
   public ResponseEntity<String> sendMail(@RequestBody MailDto mailDto) {
-
-    log.error("An ERROR Message");
-
     return new ResponseEntity<>(emailService.sendSimpleMail(mailDto), HttpStatus.OK);
   }
 
