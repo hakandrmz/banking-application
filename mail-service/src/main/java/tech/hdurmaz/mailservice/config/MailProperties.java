@@ -12,5 +12,5 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class MailProperties {
 
-  private Map<String, String> mail;
+    private Map<String, String> mail;
 }

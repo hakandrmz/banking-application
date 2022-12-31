@@ -25,32 +25,32 @@ import tech.hdurmaz.clients.credit.CreditCheckHistoryListResponse;
 @AllArgsConstructor
 public class BankingController {
 
-  private final CustomerService customerService;
+    private final CustomerService customerService;
 
-  @PostMapping
-  public void registerCustomer(@RequestBody CustomerRegistrationRequest customerRequest) {
-    log.info("New request to register customer. Request: " + customerRequest);
-    customerService.registerCustomer(customerRequest);
-  }
+    @PostMapping
+    public void registerCustomer(@RequestBody CustomerRegistrationRequest customerRequest) {
+        log.info("New request to register customer. Request: " + customerRequest);
+        customerService.registerCustomer(customerRequest);
+    }
 
-  @GetMapping(path = "/{identityNumber}")
-  public CustomerCreditResponse checkCreditResponseByCustomerId(
-      @PathVariable("identityNumber") String identityNumber) {
-    log.info("Customer credit score requested. - " + identityNumber);
-    return customerService.checkCustomerCreditScore(identityNumber);
-  }
+    @GetMapping(path = "/{identityNumber}")
+    public CustomerCreditResponse checkCreditResponseByCustomerId(
+        @PathVariable("identityNumber") String identityNumber) {
+        log.info("Customer credit score requested. - " + identityNumber);
+        return customerService.checkCustomerCreditScore(identityNumber);
+    }
 
-  @PutMapping
-  public ResponseEntity<UpdateCustomerResponse> updateCustomer(
-      @RequestBody UpdateCustomerRequest updateCustomerRequest) {
-    log.info("Customer updated request: " + updateCustomerRequest);
-    return new ResponseEntity<>(customerService.updateCustomer(updateCustomerRequest),
-        HttpStatus.CREATED);
-  }
+    @PutMapping
+    public ResponseEntity<UpdateCustomerResponse> updateCustomer(
+        @RequestBody UpdateCustomerRequest updateCustomerRequest) {
+        log.info("Customer updated request: " + updateCustomerRequest);
+        return new ResponseEntity<>(customerService.updateCustomer(updateCustomerRequest),
+            HttpStatus.CREATED);
+    }
 
-  @GetMapping(path = "/creditHistory/{identityNumber}")
-  public List<CreditCheckHistoryListResponse> getCreditScoresByCustomerIdResponse(
-      @PathVariable("identityNumber") String identityNumber) {
-    return customerService.getCreditScoresByCustomerId(identityNumber);
-  }
+    @GetMapping(path = "/creditHistory/{identityNumber}")
+    public List<CreditCheckHistoryListResponse> getCreditScoresByCustomerIdResponse(
+        @PathVariable("identityNumber") String identityNumber) {
+        return customerService.getCreditScoresByCustomerId(identityNumber);
+    }
 }

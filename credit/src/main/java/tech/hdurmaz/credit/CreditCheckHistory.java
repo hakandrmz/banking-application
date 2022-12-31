@@ -18,17 +18,17 @@ import lombok.NoArgsConstructor;
 @Entity
 public class CreditCheckHistory {
 
-  @Id
-  @SequenceGenerator(
-      name = "credit_id_sequence",
-      sequenceName = "credit_id_sequence"
-  )
-  @GeneratedValue(
-      strategy = GenerationType.SEQUENCE,
-      generator = "credit_id_sequence"
-  )
-  private Integer id;
-  private String customerId;
-  private Integer amount;
-  private Date checkDate;
+    @Id
+    @SequenceGenerator(
+        name = "credit_id_sequence",
+        sequenceName = "credit_id_sequence"
+    )
+    @GeneratedValue(
+        strategy = GenerationType.SEQUENCE,
+        generator = "credit_id_sequence"
+    )
+    private Integer id;
+    private String customerId;
+    private Integer amount;
+    private Date checkDate;
 }

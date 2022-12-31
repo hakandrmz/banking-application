@@ -5,5 +5,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface CreditCheckRepository extends JpaRepository<CreditCheckHistory, Integer> {
 
-  List<CreditCheckHistory> findAllByCustomerId(String identityNumber);
+    List<CreditCheckHistory> findAllByCustomerId(String identityNumber);
 }

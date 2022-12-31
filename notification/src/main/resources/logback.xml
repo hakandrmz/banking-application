@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
 
-  <property name="APPLICATION_NAME" value="NOTIFICATION_SERVICE"/>
-  <property name="LOGS" value="./logs"/>
-
   <appender class="ch.qos.logback.core.ConsoleAppender"
     name="Console">
     <layout class="ch.qos.logback.classic.PatternLayout">
@@ -30,17 +27,20 @@
       </timeBasedFileNamingAndTriggeringPolicy>
     </rollingPolicy>
   </appender>
+
   <appender class="ch.qos.logback.classic.net.SMTPAppender" name="EMAIL">
     <SSL>true</SSL>
     <from>hakandrmz18@gmail.com</from>
     <layout class="ch.qos.logback.classic.html.HTMLLayout"/>
-    <password>hytjlzopkclssmcu</password>
+    <password>scmzhaxxdlnqtfvi</password>
     <smtpHost>smtp.gmail.com</smtpHost>
     <smtpPort>465</smtpPort>
     <subject>${APPLICATION_NAME}: %logger{20} - %m</subject>
     <to>durmazhakan@yahoo.com</to>
     <username>hakandrmz18@gmail.com</username>
   </appender>
+  <property name="LOGS" value="./logs"/>
+  <property name="APPLICATION_NAME" value="NOTIFICATION_SERVICE"/>
 
   <root level="info">
     <appender-ref ref="EMAIL"/>

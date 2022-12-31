@@ -11,5 +11,5 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class UpdateCustomerResponse {
 
-  private String identityNumber;
+    private String identityNumber;
 }

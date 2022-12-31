@@ -9,17 +9,17 @@ import tech.hdurmaz.clients.notification.NotificationRequest;
 @AllArgsConstructor
 public class NotificationService {
 
-  private final NotificationRepository notificationRepository;
+    private final NotificationRepository notificationRepository;
 
-  public void send(NotificationRequest notificationRequest) {
-    notificationRepository.save(
-        Notification.builder()
-            .toCustomerId(notificationRequest.identityNumber())
-            .toCustomerEmail(notificationRequest.toCustomerName())
-            .sender("hdurmaz")
-            .message(notificationRequest.message())
-            .sentAt(LocalDateTime.now())
-            .build()
-    );
-  }
+    public void send(NotificationRequest notificationRequest) {
+        notificationRepository.save(
+            Notification.builder()
+                .toCustomerId(notificationRequest.identityNumber())
+                .toCustomerEmail(notificationRequest.toCustomerName())
+                .sender("hdurmaz")
+                .message(notificationRequest.message())
+                .sentAt(LocalDateTime.now())
+                .build()
+        );
+    }
 }

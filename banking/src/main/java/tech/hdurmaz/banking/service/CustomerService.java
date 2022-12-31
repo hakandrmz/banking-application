@@ -22,64 +22,65 @@ import tech.hdurmaz.clients.notification.NotificationRequest;
 @Slf4j
 public class CustomerService {
 
-  private final CustomerRepository customerRepository;
-  private final CreditClient creditClient;
-  private final RabbitMQMessageProducer rabbitMQMessageProducer;
+    private final CustomerRepository customerRepository;
+    private final CreditClient creditClient;
+    private final RabbitMQMessageProducer rabbitMQMessageProducer;
 
-  public void registerCustomer(CustomerRegistrationRequest customerRequest) {
+    public void registerCustomer(CustomerRegistrationRequest customerRequest) {
 
-    checkCustomerIsAlreadyExist(customerRequest.identityNumber());
+        checkCustomerIsAlreadyExist(customerRequest.identityNumber());
 
-    Customer customer = Customer.builder().firstName(customerRequest.firstName())
-        .lastName(customerRequest.lastName()).email(customerRequest.email())
-        .income(customerRequest.income()).phoneNumber(customerRequest.phoneNumber())
-        .identityNumber(customerRequest.identityNumber()).build();
+        Customer customer = Customer.builder().firstName(customerRequest.firstName())
+            .lastName(customerRequest.lastName()).email(customerRequest.email())
+            .income(customerRequest.income()).phoneNumber(customerRequest.phoneNumber())
+            .identityNumber(customerRequest.identityNumber()).build();
 
-    customerRepository.save(customer);
-  }
-
-  private void checkCustomerIsAlreadyExist(String identityNumber) {
-    boolean exists = customerRepository.existsByIdentityNumber(identityNumber);
-    if (exists) {
-      log.error("Customer " + identityNumber + " is already exist.");
-      throw new CustomerAlreadyExistException("Customer " + identityNumber + " is already exist.");
+        customerRepository.save(customer);
     }
-  }
 
-  public CustomerCreditResponse checkCustomerCreditScore(String identityNumber) {
+    private void checkCustomerIsAlreadyExist(String identityNumber) {
+        boolean exists = customerRepository.existsByIdentityNumber(identityNumber);
+        if (exists) {
+            log.error("Customer " + identityNumber + " is already exist.");
+            throw new CustomerAlreadyExistException(
+                "Customer " + identityNumber + " is already exist.");
+        }
+    }
 
-    Customer customer = customerRepository.findByIdentityNumber(identityNumber);
+    public CustomerCreditResponse checkCustomerCreditScore(String identityNumber) {
 
-    CreditCheckResponse creditCheckResponse = creditClient.checkCredit(identityNumber,
-        customer.getIncome());
+        Customer customer = customerRepository.findByIdentityNumber(identityNumber);
 
-    NotificationRequest notificationRequest = new NotificationRequest("",
-        "Customer identity number: " + creditCheckResponse.identityNumber(),
-        "Kredi sonucunuz: " + creditCheckResponse.amount());
+        CreditCheckResponse creditCheckResponse = creditClient.checkCredit(identityNumber,
+            customer.getIncome());
 
-    rabbitMQMessageProducer.publish(notificationRequest, "internal.exchange",
-        "internal.notification.routing-key");
+        NotificationRequest notificationRequest = new NotificationRequest("",
+            "Customer identity number: " + creditCheckResponse.identityNumber(),
+            "Kredi sonucunuz: " + creditCheckResponse.amount());
 
-    return CustomerCreditResponse.builder().customerId(creditCheckResponse.identityNumber())
-        .message(creditCheckResponse.message()).amount(creditCheckResponse.amount()).build();
-  }
+        rabbitMQMessageProducer.publish(notificationRequest, "internal.exchange",
+            "internal.notification.routing-key");
 
-  public UpdateCustomerResponse updateCustomer(UpdateCustomerRequest updateCustomerRequest) {
+        return CustomerCreditResponse.builder().customerId(creditCheckResponse.identityNumber())
+            .message(creditCheckResponse.message()).amount(creditCheckResponse.amount()).build();
+    }
 
-    Customer customer = customerRepository.getCustomerByIdentityNumber(
-        updateCustomerRequest.getIdentityNumber());
-    customer.setEmail(updateCustomerRequest.getEmail());
-    customer.setIncome(updateCustomerRequest.getIncome());
-    customer.setFirstName(updateCustomerRequest.getFirstName());
-    customer.setPhoneNumber(updateCustomerRequest.getPhoneNumber());
+    public UpdateCustomerResponse updateCustomer(UpdateCustomerRequest updateCustomerRequest) {
 
-    customerRepository.save(customer);
+        Customer customer = customerRepository.getCustomerByIdentityNumber(
+            updateCustomerRequest.getIdentityNumber());
+        customer.setEmail(updateCustomerRequest.getEmail());
+        customer.setIncome(updateCustomerRequest.getIncome());
+        customer.setFirstName(updateCustomerRequest.getFirstName());
+        customer.setPhoneNumber(updateCustomerRequest.getPhoneNumber());
 
-    return UpdateCustomerResponse.builder()
-        .identityNumber(updateCustomerRequest.getIdentityNumber()).build();
-  }
+        customerRepository.save(customer);
 
-  public List<CreditCheckHistoryListResponse> getCreditScoresByCustomerId(String identityNumber) {
-    return creditClient.getCreditHistoryListByIdentityNumber(identityNumber);
-  }
+        return UpdateCustomerResponse.builder()
+            .identityNumber(updateCustomerRequest.getIdentityNumber()).build();
+    }
+
+    public List<CreditCheckHistoryListResponse> getCreditScoresByCustomerId(String identityNumber) {
+        return creditClient.getCreditHistoryListByIdentityNumber(identityNumber);
+    }
 }

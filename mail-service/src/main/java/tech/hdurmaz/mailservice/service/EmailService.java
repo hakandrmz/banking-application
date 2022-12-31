@@ -4,5 +4,5 @@ import tech.hdurmaz.mailservice.dto.MailDto;
 
 public interface EmailService {
 
-  String sendSimpleMail(MailDto mailDto);
+    String sendSimpleMail(MailDto mailDto);
 }

@@ -7,15 +7,14 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 
 @Configuration
-@org.springframework.context.annotation.PropertySource("application.yml")
 @RequiredArgsConstructor
 public class PropertiesConfigurer {
 
-  private final Environment environment;
+    private final Environment environment;
 
-  public Map<String, String> getEnvironmentVariables(String key) {
-    HashMap<String, String> env = new HashMap<>();
-    env.put(key, environment.getProperty(key));
-    return env;
-  }
+    public Map<String, String> getEnvironmentVariables(String key) {
+        HashMap<String, String> env = new HashMap<>();
+        env.put(key, environment.getProperty(key));
+        return env;
+    }
 }

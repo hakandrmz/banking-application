@@ -16,19 +16,19 @@ import tech.hdurmaz.clients.credit.CreditCheckResponse;
 @Slf4j
 public class CreditCheckController {
 
-  private final CreditCheckService creditCheckService;
+    private final CreditCheckService creditCheckService;
 
-  @GetMapping(path = "/{identityNumber}/{salary}")
-  CreditCheckResponse checkCredit(@PathVariable("identityNumber") String identityNumber,
-      @PathVariable("salary") Integer salary) {
-    log.info("Customer credit score checked. - " + identityNumber);
-    return creditCheckService.checkCreditAmount(identityNumber, salary);
-  }
+    @GetMapping(path = "/{identityNumber}/{salary}")
+    public CreditCheckResponse checkCredit(@PathVariable("identityNumber") String identityNumber,
+        @PathVariable("salary") Integer salary) {
+        log.info("Customer credit score checked. - " + identityNumber);
+        return creditCheckService.checkCreditAmount(identityNumber, salary);
+    }
 
-  @GetMapping(path = "historyList/{identityNumber}")
-  List<CreditCheckHistoryListResponse> getCreditHistoryListByIdentityNumber(
-      @PathVariable("identityNumber") String identityNumber) {
-    return creditCheckService.checkCreditAmountHistoryByIdentityNumber(identityNumber);
-  }
+    @GetMapping(path = "historyList/{identityNumber}")
+    public List<CreditCheckHistoryListResponse> getCreditHistoryListByIdentityNumber(
+        @PathVariable("identityNumber") String identityNumber) {
+        return creditCheckService.checkCreditAmountHistoryByIdentityNumber(identityNumber);
+    }
 
 }

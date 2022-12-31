@@ -17,12 +17,12 @@ import tech.hdurmaz.banking.config.PropertiesConfigurer;
 @RefreshScope
 public class PropertiesController {
 
-  private final PropertiesConfigurer configuration;
+    private final PropertiesConfigurer configuration;
 
-  @GetMapping
-  public Map<String, String> getEnvironments(@RequestParam String key) {
-    log.info("Property " + key + " fetch from PropertiesConfigurer");
-    return configuration.getEnvironmentVariables(key);
-  }
+    @GetMapping
+    public Map<String, String> getEnvironments(@RequestParam String key) {
+        log.info("Property " + key + " fetch from PropertiesConfigurer");
+        return configuration.getEnvironmentVariables(key);
+    }
 
 }

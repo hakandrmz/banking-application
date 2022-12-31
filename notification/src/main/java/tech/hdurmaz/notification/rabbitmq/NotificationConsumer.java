@@ -12,11 +12,11 @@ import tech.hdurmaz.notification.NotificationService;
 @Slf4j
 public class NotificationConsumer {
 
-  private final NotificationService notificationService;
+    private final NotificationService notificationService;
 
-  @RabbitListener(queues = "${rabbitmq.queues.notification}")
-  public void consumer(NotificationRequest notificationRequest) {
-    log.info("Consumed {} from queue.", notificationRequest);
-    notificationService.send(notificationRequest);
-  }
+    @RabbitListener(queues = "${rabbitmq.queues.notification}")
+    public void consumer(NotificationRequest notificationRequest) {
+        log.info("Consumed {} from queue.", notificationRequest);
+        notificationService.send(notificationRequest);
+    }
 }

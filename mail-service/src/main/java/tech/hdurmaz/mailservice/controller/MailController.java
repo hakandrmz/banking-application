@@ -17,11 +17,11 @@ import tech.hdurmaz.mailservice.service.EmailService;
 @Slf4j
 public class MailController {
 
-  private final EmailService emailService;
+    private final EmailService emailService;
 
-  @PostMapping
-  public ResponseEntity<String> sendMail(@RequestBody MailDto mailDto) {
-    return new ResponseEntity<>(emailService.sendSimpleMail(mailDto), HttpStatus.OK);
-  }
+    @PostMapping
+    public ResponseEntity<String> sendMail(@RequestBody MailDto mailDto) {
+        return new ResponseEntity<>(emailService.sendSimpleMail(mailDto), HttpStatus.OK);
+    }
 
 }

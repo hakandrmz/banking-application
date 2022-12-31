@@ -12,8 +12,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class CreditCheckHistoryListResponse {
 
-  private Integer id;
-  private String customerId;
-  private Integer amount;
-  private Date checkDate;
+    private Integer id;
+    private String customerId;
+    private Integer amount;
+    private Date checkDate;
 }

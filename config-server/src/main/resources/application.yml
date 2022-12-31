@@ -11,7 +11,7 @@ spring:
           clone-on-start: true
           default-label: master
           username: hakandrmz
-          password: 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
+          password: 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
 
 management:
   endpoints:
