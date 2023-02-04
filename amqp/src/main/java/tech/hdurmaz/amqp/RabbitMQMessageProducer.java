@@ -14,10 +14,12 @@ public class RabbitMQMessageProducer {
 
     public void publish(Object payload, String exchange, String routingKey) {
         log.info("Publishing to {} using routing key {}. Payload:{} ", exchange, routingKey,
-            payload);
+                payload
+        );
         amqpTemplate.convertAndSend(exchange, routingKey, payload);
         log.info("Published to {} using routing key {}. Payload:{} ", exchange, routingKey,
-            payload);
+                payload
+        );
     }
 
 }

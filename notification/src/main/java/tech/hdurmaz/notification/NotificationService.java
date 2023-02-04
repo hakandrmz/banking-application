@@ -1,9 +1,10 @@
 package tech.hdurmaz.notification;
 
-import java.time.LocalDateTime;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import tech.hdurmaz.clients.notification.NotificationRequest;
+
+import java.time.LocalDateTime;
 
 @Service
 @AllArgsConstructor
@@ -13,13 +14,13 @@ public class NotificationService {
 
     public void send(NotificationRequest notificationRequest) {
         notificationRepository.save(
-            Notification.builder()
-                .toCustomerId(notificationRequest.identityNumber())
-                .toCustomerEmail(notificationRequest.toCustomerName())
-                .sender("hdurmaz")
-                .message(notificationRequest.message())
-                .sentAt(LocalDateTime.now())
-                .build()
+                Notification.builder()
+                        .toCustomerId(notificationRequest.identityNumber())
+                        .toCustomerEmail(notificationRequest.toCustomerName())
+                        .sender("hdurmaz")
+                        .message(notificationRequest.message())
+                        .sentAt(LocalDateTime.now())
+                        .build()
         );
     }
 }

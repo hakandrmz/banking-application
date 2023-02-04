@@ -1,8 +1,12 @@
 package tech.hdurmaz.mailservice.service;
 
-import tech.hdurmaz.mailservice.dto.MailDto;
+import org.springframework.web.multipart.MultipartFile;
+
+import javax.mail.MessagingException;
+import java.io.IOException;
 
 public interface EmailService {
 
-    String sendSimpleMail(MailDto mailDto);
+    void sendEmail(String toList, MultipartFile fileToAttach)
+            throws MessagingException, IOException;
 }

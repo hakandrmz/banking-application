@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication(
-    scanBasePackages = {
-        "tech.hdurmaz.notification",
-        "tech.hdurmaz.amqp",
-    }
+        scanBasePackages = {
+                "tech.hdurmaz.notification",
+                "tech.hdurmaz.amqp",
+        }
 )
 public class NotificationApplication {
 

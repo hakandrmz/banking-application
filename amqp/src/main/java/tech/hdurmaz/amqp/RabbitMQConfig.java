@@ -1,6 +1,5 @@
 package tech.hdurmaz.amqp;
 
-
 import lombok.AllArgsConstructor;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.amqp.rabbit.config.SimpleRabbitListenerContainerFactory;
