@@ -41,7 +41,7 @@ services:
     restart: always
     command: /bin/sh -c "redis-server --requirepass $$REDIS_HOST_PASSWORD"
     env_file:
-      - redis.env
+      - ../redis.env
 
   rabbitmq:
     image: rabbitmq:3.9.11-management-alpine
