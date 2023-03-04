@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
 
+    <property name="LOGS" value="./logs"/>
+    <property name="APPLICATION_NAME" value="CREDIT_SERVICE"/>
+
     <appender class="ch.qos.logback.core.ConsoleAppender"
               name="Console">
         <layout class="ch.qos.logback.classic.PatternLayout">
@@ -68,8 +71,6 @@
             <staticField>os_version:${os.version}</staticField>
         </encoder>
     </appender>
-    <property name="LOGS" value="./logs"/>
-    <property name="APPLICATION_NAME" value="CREDIT_SERVICE"/>
 
     <root level="info">
         <appender-ref ref="EMAIL"/>

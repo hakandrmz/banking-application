@@ -1,4 +1,4 @@
-package tech.hdurmaz.banking.dtos;
+package tech.hdurmaz.clients.customer;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

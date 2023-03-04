@@ -1,12 +1,11 @@
 package tech.hdurmaz.mailservice.service;
 
-import org.springframework.web.multipart.MultipartFile;
-
-import javax.mail.MessagingException;
-import java.io.IOException;
+import tech.hdurmaz.clients.mail.CustomerRegistrationMail;
+import tech.hdurmaz.clients.mail.SendFileMailAccountsRequest;
 
 public interface EmailService {
 
-    void sendEmail(String toList, MultipartFile fileToAttach)
-            throws MessagingException, IOException;
+  void sendEmail(SendFileMailAccountsRequest request);
+
+  void sendRegistrationEmail(CustomerRegistrationMail request);
 }

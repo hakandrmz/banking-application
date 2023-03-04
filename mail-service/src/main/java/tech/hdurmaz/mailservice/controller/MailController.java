@@ -1,5 +1,7 @@
 package tech.hdurmaz.mailservice.controller;
 
+import java.io.IOException;
+import javax.mail.MessagingException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -10,10 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
+import tech.hdurmaz.clients.mail.SendFileMailAccountsRequest;
 import tech.hdurmaz.mailservice.service.EmailService;
-
-import javax.mail.MessagingException;
-import java.io.IOException;
 
 @RequestMapping("/mail")
 @RestController
@@ -21,15 +21,16 @@ import java.io.IOException;
 @Slf4j
 public class MailController {
 
-    private final EmailService emailService;
+  private final EmailService emailService;
 
-    @PostMapping(consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.MULTIPART_FORM_DATA_VALUE})
-    public ResponseEntity<String> sendMail(@RequestParam String toList,
-                                           @RequestParam("file") MultipartFile multipartFile)
-            throws IOException, MessagingException {
-        log.info("Sending email to: " + toList);
-        emailService.sendEmail(toList, multipartFile);
-        return new ResponseEntity<>(HttpStatus.OK);
-    }
+  @PostMapping(consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.MULTIPART_FORM_DATA_VALUE})
+  public ResponseEntity<String> sendMail(@RequestParam("file") MultipartFile multipartFile,
+      @RequestParam String toList)
+      throws IOException, MessagingException {
+    SendFileMailAccountsRequest request = new SendFileMailAccountsRequest(toList, multipartFile);
+    log.info("Sending email to: " + toList);
+    emailService.sendEmail(request);
+    return new ResponseEntity<>(HttpStatus.OK);
+  }
 
 }

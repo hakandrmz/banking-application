@@ -13,7 +13,6 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableEurekaClient
 @EnableFeignClients(
         basePackages = "tech.hdurmaz.clients"
-
 )
 public class BankingApplication {
 

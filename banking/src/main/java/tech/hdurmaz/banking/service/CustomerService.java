@@ -1,22 +1,22 @@
 package tech.hdurmaz.banking.service;
 
+import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import tech.hdurmaz.amqp.RabbitMQMessageProducer;
-import tech.hdurmaz.banking.dtos.CustomerCreditResponse;
-import tech.hdurmaz.banking.dtos.CustomerRegistrationRequest;
-import tech.hdurmaz.banking.dtos.UpdateCustomerRequest;
-import tech.hdurmaz.banking.dtos.UpdateCustomerResponse;
 import tech.hdurmaz.banking.exceptions.CustomerAlreadyExistException;
 import tech.hdurmaz.banking.models.Customer;
 import tech.hdurmaz.banking.repository.CustomerRepository;
 import tech.hdurmaz.clients.credit.CreditCheckHistoryListResponse;
 import tech.hdurmaz.clients.credit.CreditCheckResponse;
 import tech.hdurmaz.clients.credit.CreditClient;
+import tech.hdurmaz.clients.customer.CustomerCreditResponse;
+import tech.hdurmaz.clients.customer.CustomerRegistrationRequest;
+import tech.hdurmaz.clients.customer.UpdateCustomerRequest;
+import tech.hdurmaz.clients.customer.UpdateCustomerResponse;
+import tech.hdurmaz.clients.mail.CustomerRegistrationMail;
 import tech.hdurmaz.clients.notification.NotificationRequest;
-
-import java.util.List;
 
 @Service
 @AllArgsConstructor
@@ -32,11 +32,24 @@ public class CustomerService {
         checkCustomerIsAlreadyExist(customerRequest.identityNumber());
 
         Customer customer = Customer.builder().firstName(customerRequest.firstName())
-                .lastName(customerRequest.lastName()).email(customerRequest.email())
-                .income(customerRequest.income()).phoneNumber(customerRequest.phoneNumber())
-                .identityNumber(customerRequest.identityNumber()).build();
+            .lastName(customerRequest.lastName()).email(customerRequest.email())
+            .income(customerRequest.income()).phoneNumber(customerRequest.phoneNumber())
+            .identityNumber(customerRequest.identityNumber()).build();
+
+        sendRegistrationMailNotificationToCustomer(customerRequest);
 
         customerRepository.save(customer);
+    }
+
+    private void sendRegistrationMailNotificationToCustomer(
+        CustomerRegistrationRequest customerRequest) {
+        CustomerRegistrationMail customerRegistrationMail = new CustomerRegistrationMail(
+            customerRequest.email());
+        rabbitMQMessageProducer
+            .publish(
+                customerRegistrationMail,
+                "internal.exchange",
+                "internal.mail.routing-key");
     }
 
     private void checkCustomerIsAlreadyExist(String identityNumber) {
@@ -44,7 +57,7 @@ public class CustomerService {
         if (exists) {
             log.error("Customer " + identityNumber + " is already exist.");
             throw new CustomerAlreadyExistException(
-                    "Customer " + identityNumber + " is already exist.");
+                "Customer " + identityNumber + " is already exist.");
         }
     }
 
@@ -53,28 +66,28 @@ public class CustomerService {
         Customer customer = customerRepository.findByIdentityNumber(identityNumber);
 
         CreditCheckResponse creditCheckResponse = creditClient.checkCredit(
-                identityNumber,
-                customer.getIncome()
+            identityNumber,
+            customer.getIncome()
         );
 
         NotificationRequest notificationRequest = new NotificationRequest(
-                "",
-                "Customer identity number: " + creditCheckResponse.identityNumber(),
-                "Kredi sonucunuz: " + creditCheckResponse.amount()
+            identityNumber,
+            "Customer identity number: " + creditCheckResponse.identityNumber(),
+            "Kredi sonucunuz: " + creditCheckResponse.amount()
         );
 
         rabbitMQMessageProducer.publish(notificationRequest, "internal.exchange",
-                "internal.notification.routing-key"
+            "internal.notification.routing-key"
         );
 
         return CustomerCreditResponse.builder().customerId(creditCheckResponse.identityNumber())
-                .message(creditCheckResponse.message()).amount(creditCheckResponse.amount()).build();
+            .message(creditCheckResponse.message()).amount(creditCheckResponse.amount()).build();
     }
 
     public UpdateCustomerResponse updateCustomer(UpdateCustomerRequest updateCustomerRequest) {
 
         Customer customer = customerRepository.getCustomerByIdentityNumber(
-                updateCustomerRequest.getIdentityNumber());
+            updateCustomerRequest.getIdentityNumber());
         customer.setEmail(updateCustomerRequest.getEmail());
         customer.setIncome(updateCustomerRequest.getIncome());
         customer.setFirstName(updateCustomerRequest.getFirstName());
@@ -83,7 +96,7 @@ public class CustomerService {
         customerRepository.save(customer);
 
         return UpdateCustomerResponse.builder()
-                .identityNumber(updateCustomerRequest.getIdentityNumber()).build();
+            .identityNumber(updateCustomerRequest.getIdentityNumber()).build();
     }
 
     public List<CreditCheckHistoryListResponse> getCreditScoresByCustomerId(String identityNumber) {

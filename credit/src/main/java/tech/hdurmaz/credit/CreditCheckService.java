@@ -34,16 +34,12 @@ public class CreditCheckService {
 
     private Integer calculateCreditAmount(Integer salary) {
 
-        Integer creditScore = calculateCreditScore(salary);
-        Integer amountResult = 0;
-        if (creditScore < 500) {
-            amountResult = 0;
-        } else if (creditScore > 500 && creditScore < 1000) {
+        int creditScore = calculateCreditScore(salary);
+        int amountResult = 0;
+        if (creditScore > 500 && creditScore < 1000) {
             amountResult = 10000;
         } else if (creditScore >= 1000) {
             amountResult = salary * 5;
-        } else if (creditScore > 10000) {
-            amountResult = salary * 10;
         }
         return amountResult;
     }
