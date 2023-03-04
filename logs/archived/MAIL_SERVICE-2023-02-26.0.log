@@ -1,0 +1,32 @@
+2023-02-26 21:52:08,053 INFO org.springframework.boot.StartupInfoLogger [main] Starting MailServiceApplication using Java 17.0.4.1 on hdurmaz.local with PID 19582 (/Users/hdurmaz/IdeaProjects/banking-application-credit-service/mail-service/target/classes started by hdurmaz in /Users/hdurmaz/IdeaProjects/banking-application-credit-service)
+2023-02-26 21:52:08,059 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-26 21:52:08,596 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=021d2b72-a4e9-318e-8ad0-b2ea717f4f7d
+2023-02-26 21:52:08,709 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8084 (http)
+2023-02-26 21:52:08,713 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8084"]
+2023-02-26 21:52:08,713 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-26 21:52:08,714 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-02-26 21:52:08,768 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-26 21:52:08,769 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 680 ms
+2023-02-26 21:52:09,160 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-02-26 21:52:09,181 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8084"]
+2023-02-26 21:52:09,190 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8084 (http) with context path ''
+2023-02-26 21:52:09,216 INFO org.springframework.boot.StartupInfoLogger [main] Started MailServiceApplication in 1.383 seconds (JVM running for 1.988)
+2023-02-26 21:52:09,693 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(2)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-26 21:52:09,694 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(2)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2023-02-26 21:52:09,695 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(2)-127.0.0.1] Completed initialization in 1 ms
+2023-02-26 21:54:22,531 INFO org.springframework.boot.StartupInfoLogger [main] Starting MailServiceApplication using Java 17.0.4.1 on hdurmaz.local with PID 19874 (/Users/hdurmaz/IdeaProjects/banking-application-credit-service/mail-service/target/classes started by hdurmaz in /Users/hdurmaz/IdeaProjects/banking-application-credit-service)
+2023-02-26 21:54:22,535 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-26 21:54:22,846 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=9f1fab4f-2364-32bc-ad42-4676517b3731
+2023-02-26 21:54:22,992 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8084 (http)
+2023-02-26 21:54:23,002 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8084"]
+2023-02-26 21:54:23,003 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-02-26 21:54:23,003 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-02-26 21:54:23,059 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-02-26 21:54:23,059 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 507 ms
+2023-02-26 21:54:23,412 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-02-26 21:54:23,431 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8084"]
+2023-02-26 21:54:23,437 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8084 (http) with context path ''
+2023-02-26 21:54:23,447 INFO org.springframework.boot.StartupInfoLogger [main] Started MailServiceApplication in 1.124 seconds (JVM running for 1.76)
+2023-02-26 21:54:23,592 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(3)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-26 21:54:23,594 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2023-02-26 21:54:23,595 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Completed initialization in 1 ms

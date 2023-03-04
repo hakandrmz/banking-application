@@ -5,12 +5,13 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import tech.hdurmaz.banking.dtos.CustomerCreditResponse;
-import tech.hdurmaz.banking.dtos.CustomerRegistrationRequest;
-import tech.hdurmaz.banking.dtos.UpdateCustomerRequest;
-import tech.hdurmaz.banking.dtos.UpdateCustomerResponse;
+
 import tech.hdurmaz.banking.service.CustomerService;
 import tech.hdurmaz.clients.credit.CreditCheckHistoryListResponse;
+import tech.hdurmaz.clients.customer.CustomerCreditResponse;
+import tech.hdurmaz.clients.customer.CustomerRegistrationRequest;
+import tech.hdurmaz.clients.customer.UpdateCustomerRequest;
+import tech.hdurmaz.clients.customer.UpdateCustomerResponse;
 
 import java.util.List;
 

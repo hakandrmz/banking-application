@@ -1,11 +1,10 @@
 package tech.hdurmaz.mailservice.config;
 
+import java.util.Map;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
-
-import java.util.Map;
 
 @ConfigurationProperties(prefix = "spring")
 @Data
@@ -13,5 +12,5 @@ import java.util.Map;
 @Configuration
 public class MailProperties {
 
-    private Map<String, String> mail;
+  private Map<String, String> mail;
 }

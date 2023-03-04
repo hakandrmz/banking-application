@@ -1,120 +1,129 @@
-2022-12-24 15:17:17,957 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
-2022-12-24 15:17:17,960 INFO org.springframework.boot.StartupInfoLogger [main] Starting NotificationApplication using Java 17.0.4.1 on hdurmaz.local with PID 4968 (/Users/hdurmaz/IdeaProjects/banking-application-credit-service/notification/target/classes started by hdurmaz in /Users/hdurmaz/IdeaProjects/banking-application-credit-service)
-2022-12-24 15:17:17,961 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2022-12-24 15:17:17,972 INFO org.springframework.boot.logging.DeferredLog [main] Fetching config from server at : http://localhost:8088
-2022-12-24 15:17:17,973 INFO org.springframework.boot.logging.DeferredLog [main] Located environment: name=notification, profiles=[default], label=null, version=4d380a2eaa422ee25dcd8d97788767010bc7356f, state=null
-2022-12-24 15:17:18,443 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-12-24 15:17:18,499 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interfaces.
-2022-12-24 15:17:18,661 INFO org.springframework.core.log.LogAccessor [main] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
-2022-12-24 15:17:18,668 INFO org.springframework.core.log.LogAccessor [main] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
-2022-12-24 15:17:18,729 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=36244d16-9a8d-38ac-a3fc-201be1afd638
-2022-12-24 15:17:18,877 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-12-24 15:17:18,883 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-12-24 15:17:18,889 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-12-24 15:17:18,890 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'bindersHealthContributor' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthContributor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-12-24 15:17:18,895 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'bindersHealthIndicatorListener' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthIndicatorListener] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-12-24 15:17:18,899 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration' of type [org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration$$EnhancerBySpringCGLIB$$902bde7c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-12-24 15:17:18,904 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'rabbitExtendedPropertiesDefaultMappingsProvider' of type [org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration$$Lambda$716/0x00000008011e2d80] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-12-24 15:17:18,906 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'BindingHandlerAdvise' of type [org.springframework.cloud.stream.config.BindingHandlerAdvise] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-12-24 15:17:18,907 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-12-24 15:17:18,909 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-12-24 15:17:18,909 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$717/0x00000008011e2fa0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-12-24 15:17:18,911 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-12-24 15:17:18,916 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spelConverter' of type [org.springframework.cloud.stream.config.SpelExpressionConverterConfiguration$SpelConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-12-24 15:17:18,920 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spring.jmx-org.springframework.boot.autoconfigure.jmx.JmxProperties' of type [org.springframework.boot.autoconfigure.jmx.JmxProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-12-24 15:17:18,923 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-12-24 15:17:18,925 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-12-24 15:17:18,941 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-12-24 15:17:19,120 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8082 (http)
-2022-12-24 15:17:19,126 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
-2022-12-24 15:17:19,126 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
-2022-12-24 15:17:19,126 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
-2022-12-24 15:17:19,216 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2022-12-24 15:17:19,216 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1243 ms
-2022-12-24 15:17:20,107 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-12-24 15:17:20,131 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.12.Final
-2022-12-24 15:17:20,207 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-12-24 15:17:20,253 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
-2022-12-24 15:17:20,977 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2022-12-24 15:17:20,985 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2022-12-24 15:17:21,553 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-12-24 15:17:21,560 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-12-24 15:17:21,807 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-12-24 15:17:22,354 INFO org.springframework.core.log.LogAccessor [main] Channel 'notification.springCloudBusInput' has 1 subscriber(s).
-2022-12-24 15:17:22,480 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses RestTemplate.
-2022-12-24 15:17:22,552 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2022-12-24 15:17:22,588 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 25 endpoint(s) beneath base path '/actuator'
-2022-12-24 15:17:22,711 INFO org.springframework.integration.monitor.IntegrationMBeanExporter [main] Registering MessageChannel errorChannel
-2022-12-24 15:17:22,727 INFO org.springframework.integration.monitor.IntegrationMBeanExporter [main] Registering MessageChannel springCloudBusInput
-2022-12-24 15:17:22,738 INFO org.springframework.integration.monitor.IntegrationMBeanExporter [main] Registering MessageChannel nullChannel
-2022-12-24 15:17:22,744 INFO org.springframework.integration.monitor.IntegrationMBeanExporter [main] Registering MessageHandler _org.springframework.integration.errorLogger
-2022-12-24 15:17:22,759 INFO org.springframework.core.log.LogAccessor [main] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
-2022-12-24 15:17:22,759 INFO org.springframework.core.log.LogAccessor [main] Channel 'notification.errorChannel' has 1 subscriber(s).
-2022-12-24 15:17:22,759 INFO org.springframework.core.log.LogAccessor [main] started bean '_org.springframework.integration.errorLogger'
-2022-12-24 15:17:22,763 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [main] Setting initial instance status as: STARTING
-2022-12-24 15:17:22,776 INFO com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
-2022-12-24 15:17:22,777 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [main] Resolving eureka endpoints via configuration
-2022-12-24 15:17:22,785 INFO com.netflix.discovery.DiscoveryClient [main] Disable delta property : false
-2022-12-24 15:17:22,785 INFO com.netflix.discovery.DiscoveryClient [main] Single vip registry refresh property : null
-2022-12-24 15:17:22,785 INFO com.netflix.discovery.DiscoveryClient [main] Force full registry fetch : false
-2022-12-24 15:17:22,785 INFO com.netflix.discovery.DiscoveryClient [main] Application is null : false
-2022-12-24 15:17:22,785 INFO com.netflix.discovery.DiscoveryClient [main] Registered Applications size is zero : true
-2022-12-24 15:17:22,785 INFO com.netflix.discovery.DiscoveryClient [main] Application version is -1: true
-2022-12-24 15:17:22,785 INFO com.netflix.discovery.DiscoveryClient [main] Getting all instance registry info from the eureka server
-2022-12-24 15:17:22,843 INFO com.netflix.discovery.DiscoveryClient [main] The response status is 200
-2022-12-24 15:17:22,844 INFO com.netflix.discovery.DiscoveryClient [main] Starting heartbeat executor: renew interval is: 30
-2022-12-24 15:17:22,846 INFO com.netflix.discovery.InstanceInfoReplicator [main] InstanceInfoReplicator onDemand update allowed rate per min is 4
-2022-12-24 15:17:22,848 INFO com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1671884242848 with initial instances count: 1
-2022-12-24 15:17:22,852 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [main] Registering application NOTIFICATION with eureka with status UP
-2022-12-24 15:17:22,853 INFO com.netflix.discovery.DiscoveryClient$3 [main] Saw local status change event StatusChangeEvent [timestamp=1671884242853, current=UP, previous=STARTING]
-2022-12-24 15:17:22,853 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_NOTIFICATION/192.168.1.8:notification:8082: registering service...
-2022-12-24 15:17:22,870 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_NOTIFICATION/192.168.1.8:notification:8082 - registration status: 204
-2022-12-24 15:17:22,925 INFO org.springframework.cloud.stream.binder.rabbit.provisioning.RabbitExchangeQueueProvisioner [main] declaring queue for inbound: springCloudBus.anonymous.qJeUOMHUQCy9qRGPiiT7-A, bound to: springCloudBus
-2022-12-24 15:17:22,927 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [main] Attempting to connect to: [localhost:5672]
-2022-12-24 15:17:22,953 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [main] Created new connection: rabbitConnectionFactory#e2ee348:0/SimpleConnection@34c83eb0 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 50168]
-2022-12-24 15:17:22,984 INFO org.springframework.core.log.LogAccessor [main] Channel 'springCloudBus.anonymous.qJeUOMHUQCy9qRGPiiT7-A.errors' has 1 subscriber(s).
-2022-12-24 15:17:22,985 INFO org.springframework.core.log.LogAccessor [main] Channel 'springCloudBus.anonymous.qJeUOMHUQCy9qRGPiiT7-A.errors' has 2 subscriber(s).
-2022-12-24 15:17:22,992 INFO org.springframework.core.log.LogAccessor [main] started bean 'inbound.springCloudBus.anonymous.qJeUOMHUQCy9qRGPiiT7-A'
-2022-12-24 15:17:22,993 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
-2022-12-24 15:17:23,002 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8082 (http) with context path ''
-2022-12-24 15:17:23,003 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [main] Updating port to 8082
-2022-12-24 15:17:23,023 INFO org.springframework.integration.monitor.IntegrationMBeanExporter [main] Registering MessageChannel springCloudBus.anonymous.qJeUOMHUQCy9qRGPiiT7-A.errors
-2022-12-24 15:17:23,069 INFO org.springframework.boot.StartupInfoLogger [main] Started NotificationApplication in 6.561 seconds (JVM running for 6.938)
-2022-12-24 15:17:23,442 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(1)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-12-24 15:17:23,442 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(1)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
-2022-12-24 15:17:23,444 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(1)-127.0.0.1] Completed initialization in 2 ms
-2022-12-24 15:19:53,291 INFO tech.hdurmaz.notification.rabbitmq.NotificationConsumer [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] Consumed NotificationRequest[identityNumber=, toCustomerName=Customer identity number: 36367114630, message=Kredi sonucunuz: 60000] from queue.
-2022-12-24 15:22:22,790 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
-2022-12-24 15:27:22,794 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
-2022-12-24 15:32:22,782 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
-2022-12-24 15:37:22,788 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
-2022-12-24 15:42:22,794 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
-2022-12-24 15:47:22,817 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
-2022-12-24 15:52:22,824 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
-2022-12-24 15:57:22,829 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
-2022-12-24 16:02:22,853 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
-2022-12-24 16:07:22,863 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
-2022-12-24 16:10:11,362 INFO org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration$1 [Thread-2] Flushing remaining spans on shutdown
-2022-12-24 16:10:11,365 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [SpringApplicationShutdownHook] Unregistering application NOTIFICATION with eureka with status DOWN
-2022-12-24 16:10:11,365 INFO com.netflix.discovery.DiscoveryClient$3 [SpringApplicationShutdownHook] Saw local status change event StatusChangeEvent [timestamp=1671887411365, current=DOWN, previous=UP]
-2022-12-24 16:10:11,365 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_NOTIFICATION/192.168.1.8:notification:8082: registering service...
-2022-12-24 16:10:11,371 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_NOTIFICATION/192.168.1.8:notification:8082 - registration status: 204
-2022-12-24 16:10:11,382 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] Waiting for workers to finish.
-2022-12-24 16:10:11,878 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] Successfully waited for workers to finish.
-2022-12-24 16:10:11,896 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer [SpringApplicationShutdownHook] Waiting for workers to finish.
-2022-12-24 16:10:12,053 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer [SpringApplicationShutdownHook] Successfully waited for workers to finish.
-2022-12-24 16:10:12,054 INFO org.springframework.core.log.LogAccessor [SpringApplicationShutdownHook] stopped bean 'inbound.springCloudBus.anonymous.qJeUOMHUQCy9qRGPiiT7-A'
-2022-12-24 16:10:12,058 INFO org.springframework.core.log.LogAccessor [SpringApplicationShutdownHook] Channel 'notification.springCloudBus.anonymous.qJeUOMHUQCy9qRGPiiT7-A.errors' has 1 subscriber(s).
-2022-12-24 16:10:12,059 INFO org.springframework.core.log.LogAccessor [SpringApplicationShutdownHook] Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
-2022-12-24 16:10:12,059 INFO org.springframework.core.log.LogAccessor [SpringApplicationShutdownHook] Channel 'notification.errorChannel' has 0 subscriber(s).
-2022-12-24 16:10:12,059 INFO org.springframework.core.log.LogAccessor [SpringApplicationShutdownHook] stopped bean '_org.springframework.integration.errorLogger'
-2022-12-24 16:10:12,062 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer [SpringApplicationShutdownHook] Shutdown ignored - container is already stopped
-2022-12-24 16:10:12,064 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-12-24 16:10:12,520 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
-2022-12-24 16:10:12,521 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
-2022-12-24 16:10:12,522 INFO com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] Shutting down DiscoveryClient ...
-2022-12-24 16:10:15,528 INFO com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] Unregistering ...
-2022-12-24 16:10:15,533 INFO com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient [SpringApplicationShutdownHook] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/NOTIFICATION/192.168.1.8:notification:8082": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/NOTIFICATION/192.168.1.8:notification:8082": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
+2023-03-04 10:22:20,824 INFO org.springframework.boot.StartupInfoLogger [main] Starting NotificationApplication using Java 17.0.6 on hdurmaz.local with PID 3145 (/Users/hdurmaz/IdeaProjects/banking-application-credit-service/notification/target/classes started by hdurmaz in /Users/hdurmaz/IdeaProjects/banking-application-credit-service)
+2023-03-04 10:22:20,841 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-04 10:22:20,847 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-03-04 10:22:20,874 INFO org.springframework.boot.logging.DeferredLog [main] Fetching config from server at : http://localhost:8088
+2023-03-04 10:22:20,876 INFO org.springframework.boot.logging.DeferredLog [main] Located environment: name=notification, profiles=[default], label=null, version=395bfafac541de9f8061f29498ee37ee3077d9e9, state=null
+2023-03-04 10:22:21,688 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-04 10:22:21,773 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 76 ms. Found 1 JPA repository interfaces.
+2023-03-04 10:22:21,998 INFO org.springframework.core.log.LogAccessor [main] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-03-04 10:22:22,006 INFO org.springframework.core.log.LogAccessor [main] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-03-04 10:22:22,071 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=36244d16-9a8d-38ac-a3fc-201be1afd638
+2023-03-04 10:22:22,340 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 10:22:22,374 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 10:22:22,382 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 10:22:22,385 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'bindersHealthContributor' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthContributor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 10:22:22,396 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'bindersHealthIndicatorListener' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthIndicatorListener] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 10:22:22,410 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration' of type [org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration$$EnhancerBySpringCGLIB$$8e94f2c6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 10:22:22,433 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'rabbitExtendedPropertiesDefaultMappingsProvider' of type [org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration$$Lambda$719/0x00000008011e3840] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 10:22:22,439 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'BindingHandlerAdvise' of type [org.springframework.cloud.stream.config.BindingHandlerAdvise] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 10:22:22,442 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 10:22:22,446 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 10:22:22,450 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$720/0x00000008011e3a60] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 10:22:22,453 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 10:22:22,474 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spelConverter' of type [org.springframework.cloud.stream.config.SpelExpressionConverterConfiguration$SpelConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 10:22:22,490 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spring.jmx-org.springframework.boot.autoconfigure.jmx.JmxProperties' of type [org.springframework.boot.autoconfigure.jmx.JmxProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 10:22:22,495 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 10:22:22,501 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 10:22:22,533 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 10:22:22,774 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8082 (http)
+2023-03-04 10:22:22,779 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2023-03-04 10:22:22,780 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-03-04 10:22:22,780 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-03-04 10:22:22,890 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-03-04 10:22:22,892 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2014 ms
+2023-03-04 10:22:24,058 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-04 10:22:24,081 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-03-04 10:22:24,148 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-04 10:22:24,223 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-04 10:22:24,379 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-04 10:22:24,394 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-03-04 10:22:24,683 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-04 10:22:24,688 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-04 10:22:24,963 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-04 10:22:25,712 INFO org.springframework.core.log.LogAccessor [main] Channel 'notification.springCloudBusInput' has 1 subscriber(s).
+2023-03-04 10:22:25,860 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses RestTemplate.
+2023-03-04 10:22:25,938 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-03-04 10:22:25,978 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 25 endpoint(s) beneath base path '/actuator'
+2023-03-04 10:22:26,127 INFO org.springframework.integration.monitor.IntegrationMBeanExporter [main] Registering MessageChannel errorChannel
+2023-03-04 10:22:26,145 INFO org.springframework.integration.monitor.IntegrationMBeanExporter [main] Registering MessageChannel springCloudBusInput
+2023-03-04 10:22:26,156 INFO org.springframework.integration.monitor.IntegrationMBeanExporter [main] Registering MessageChannel nullChannel
+2023-03-04 10:22:26,163 INFO org.springframework.integration.monitor.IntegrationMBeanExporter [main] Registering MessageHandler _org.springframework.integration.errorLogger
+2023-03-04 10:22:26,179 INFO org.springframework.core.log.LogAccessor [main] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-03-04 10:22:26,179 INFO org.springframework.core.log.LogAccessor [main] Channel 'notification.errorChannel' has 1 subscriber(s).
+2023-03-04 10:22:26,179 INFO org.springframework.core.log.LogAccessor [main] started bean '_org.springframework.integration.errorLogger'
+2023-03-04 10:22:26,184 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [main] Setting initial instance status as: STARTING
+2023-03-04 10:22:26,200 INFO com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2023-03-04 10:22:26,202 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [main] Resolving eureka endpoints via configuration
+2023-03-04 10:22:26,213 INFO com.netflix.discovery.DiscoveryClient [main] Disable delta property : false
+2023-03-04 10:22:26,213 INFO com.netflix.discovery.DiscoveryClient [main] Single vip registry refresh property : null
+2023-03-04 10:22:26,213 INFO com.netflix.discovery.DiscoveryClient [main] Force full registry fetch : false
+2023-03-04 10:22:26,213 INFO com.netflix.discovery.DiscoveryClient [main] Application is null : false
+2023-03-04 10:22:26,213 INFO com.netflix.discovery.DiscoveryClient [main] Registered Applications size is zero : true
+2023-03-04 10:22:26,214 INFO com.netflix.discovery.DiscoveryClient [main] Application version is -1: true
+2023-03-04 10:22:26,214 INFO com.netflix.discovery.DiscoveryClient [main] Getting all instance registry info from the eureka server
+2023-03-04 10:22:26,278 INFO com.netflix.discovery.DiscoveryClient [main] The response status is 200
+2023-03-04 10:22:26,279 INFO com.netflix.discovery.DiscoveryClient [main] Starting heartbeat executor: renew interval is: 30
+2023-03-04 10:22:26,280 INFO com.netflix.discovery.InstanceInfoReplicator [main] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-03-04 10:22:26,282 INFO com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1677914546281 with initial instances count: 0
+2023-03-04 10:22:26,287 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [main] Registering application NOTIFICATION with eureka with status UP
+2023-03-04 10:22:26,287 INFO com.netflix.discovery.DiscoveryClient$3 [main] Saw local status change event StatusChangeEvent [timestamp=1677914546287, current=UP, previous=STARTING]
+2023-03-04 10:22:26,287 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_NOTIFICATION/192.168.1.39:notification:8082: registering service...
+2023-03-04 10:22:26,316 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_NOTIFICATION/192.168.1.39:notification:8082 - registration status: 204
+2023-03-04 10:22:26,408 INFO org.springframework.cloud.stream.binder.rabbit.provisioning.RabbitExchangeQueueProvisioner [main] declaring queue for inbound: springCloudBus.anonymous.5k6CsEM0RLSrhvqI4mgG8A, bound to: springCloudBus
+2023-03-04 10:22:26,410 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [main] Attempting to connect to: [localhost:5672]
+2023-03-04 10:22:26,471 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [main] Created new connection: rabbitConnectionFactory#7f584d0c:0/SimpleConnection@348c2548 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 50874]
+2023-03-04 10:22:26,519 INFO org.springframework.core.log.LogAccessor [main] Channel 'springCloudBus.anonymous.5k6CsEM0RLSrhvqI4mgG8A.errors' has 1 subscriber(s).
+2023-03-04 10:22:26,520 INFO org.springframework.core.log.LogAccessor [main] Channel 'springCloudBus.anonymous.5k6CsEM0RLSrhvqI4mgG8A.errors' has 2 subscriber(s).
+2023-03-04 10:22:26,531 INFO org.springframework.core.log.LogAccessor [main] started bean 'inbound.springCloudBus.anonymous.5k6CsEM0RLSrhvqI4mgG8A'
+2023-03-04 10:22:26,533 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2023-03-04 10:22:26,544 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8082 (http) with context path ''
+2023-03-04 10:22:26,544 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [main] Updating port to 8082
+2023-03-04 10:22:26,563 INFO org.springframework.integration.monitor.IntegrationMBeanExporter [main] Registering MessageChannel springCloudBus.anonymous.5k6CsEM0RLSrhvqI4mgG8A.errors
+2023-03-04 10:22:26,616 INFO org.springframework.boot.StartupInfoLogger [main] Started NotificationApplication in 8.584 seconds (JVM running for 9.091)
+2023-03-04 10:22:26,995 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(8)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-04 10:22:26,995 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(8)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2023-03-04 10:22:26,996 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(8)-127.0.0.1] Completed initialization in 1 ms
+2023-03-04 10:22:56,284 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Disable delta property : false
+2023-03-04 10:22:56,285 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Single vip registry refresh property : null
+2023-03-04 10:22:56,286 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Force full registry fetch : false
+2023-03-04 10:22:56,286 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Application is null : false
+2023-03-04 10:22:56,286 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Registered Applications size is zero : true
+2023-03-04 10:22:56,287 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Application version is -1: false
+2023-03-04 10:22:56,287 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Getting all instance registry info from the eureka server
+2023-03-04 10:22:56,294 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] The response status is 200
+2023-03-04 10:24:26,331 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-HeartbeatExecutor-0] DiscoveryClient_NOTIFICATION/192.168.1.39:notification:8082 - Re-registering apps/NOTIFICATION
+2023-03-04 10:24:26,332 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-HeartbeatExecutor-0] DiscoveryClient_NOTIFICATION/192.168.1.39:notification:8082: registering service...
+2023-03-04 10:24:26,338 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-HeartbeatExecutor-0] DiscoveryClient_NOTIFICATION/192.168.1.39:notification:8082 - registration status: 204
+2023-03-04 10:24:56,339 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Disable delta property : false
+2023-03-04 10:24:56,341 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Single vip registry refresh property : null
+2023-03-04 10:24:56,342 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Force full registry fetch : false
+2023-03-04 10:24:56,342 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Application is null : false
+2023-03-04 10:24:56,342 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Registered Applications size is zero : true
+2023-03-04 10:24:56,343 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Application version is -1: false
+2023-03-04 10:24:56,343 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Getting all instance registry info from the eureka server
+2023-03-04 10:24:56,349 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] The response status is 200
+2023-03-04 10:27:26,216 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-03-04 10:27:48,273 INFO org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration$1 [Thread-2] Flushing remaining spans on shutdown
+2023-03-04 10:27:48,285 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [SpringApplicationShutdownHook] Unregistering application NOTIFICATION with eureka with status DOWN
+2023-03-04 10:27:48,286 INFO com.netflix.discovery.DiscoveryClient$3 [SpringApplicationShutdownHook] Saw local status change event StatusChangeEvent [timestamp=1677914868286, current=DOWN, previous=UP]
+2023-03-04 10:27:48,287 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_NOTIFICATION/192.168.1.39:notification:8082: registering service...
+2023-03-04 10:27:48,298 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_NOTIFICATION/192.168.1.39:notification:8082 - registration status: 204
+2023-03-04 10:27:48,304 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] Waiting for workers to finish.
+2023-03-04 10:27:48,728 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] Successfully waited for workers to finish.
+2023-03-04 10:27:48,744 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer [SpringApplicationShutdownHook] Waiting for workers to finish.
+2023-03-04 10:27:48,745 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer [SpringApplicationShutdownHook] Successfully waited for workers to finish.
+2023-03-04 10:27:48,746 INFO org.springframework.core.log.LogAccessor [SpringApplicationShutdownHook] stopped bean 'inbound.springCloudBus.anonymous.5k6CsEM0RLSrhvqI4mgG8A'
+2023-03-04 10:27:48,749 INFO org.springframework.core.log.LogAccessor [SpringApplicationShutdownHook] Channel 'notification.springCloudBus.anonymous.5k6CsEM0RLSrhvqI4mgG8A.errors' has 1 subscriber(s).
+2023-03-04 10:27:48,751 INFO org.springframework.core.log.LogAccessor [SpringApplicationShutdownHook] Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-03-04 10:27:48,751 INFO org.springframework.core.log.LogAccessor [SpringApplicationShutdownHook] Channel 'notification.errorChannel' has 0 subscriber(s).
+2023-03-04 10:27:48,751 INFO org.springframework.core.log.LogAccessor [SpringApplicationShutdownHook] stopped bean '_org.springframework.integration.errorLogger'
+2023-03-04 10:27:48,753 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer [SpringApplicationShutdownHook] Shutdown ignored - container is already stopped
+2023-03-04 10:27:48,755 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-04 10:27:49,771 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-03-04 10:27:49,774 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-03-04 10:27:49,775 INFO com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] Shutting down DiscoveryClient ...
+2023-03-04 10:27:52,783 INFO com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] Unregistering ...
+2023-03-04 10:27:52,794 INFO com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient [SpringApplicationShutdownHook] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/NOTIFICATION/192.168.1.39:notification:8082": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/NOTIFICATION/192.168.1.39:notification:8082": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
 	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
@@ -182,8 +191,8 @@ Caused by: java.net.ConnectException: Connection refused
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
 	... 52 more
 
-2022-12-24 16:10:15,533 WARN com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient [SpringApplicationShutdownHook] Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/NOTIFICATION/192.168.1.8:notification:8082": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
-2022-12-24 16:10:15,538 INFO com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient [SpringApplicationShutdownHook] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/NOTIFICATION/192.168.1.8:notification:8082": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/NOTIFICATION/192.168.1.8:notification:8082": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
+2023-03-04 10:27:52,796 WARN com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient [SpringApplicationShutdownHook] Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/NOTIFICATION/192.168.1.39:notification:8082": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
+2023-03-04 10:27:52,804 INFO com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient [SpringApplicationShutdownHook] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/NOTIFICATION/192.168.1.39:notification:8082": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/NOTIFICATION/192.168.1.39:notification:8082": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
 	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
@@ -252,8 +261,8 @@ Caused by: java.net.ConnectException: Connection refused
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
 	... 53 more
 
-2022-12-24 16:10:15,538 WARN com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient [SpringApplicationShutdownHook] Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/NOTIFICATION/192.168.1.8:notification:8082": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
-2022-12-24 16:10:15,539 ERROR com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] DiscoveryClient_NOTIFICATION/192.168.1.8:notification:8082 - de-registration failedCannot execute request on any known server
+2023-03-04 10:27:52,805 WARN com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient [SpringApplicationShutdownHook] Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/NOTIFICATION/192.168.1.39:notification:8082": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
+2023-03-04 10:27:52,808 ERROR com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] DiscoveryClient_NOTIFICATION/192.168.1.39:notification:8082 - de-registration failedCannot execute request on any known server
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
@@ -287,4 +296,450 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
 	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2022-12-24 16:10:15,543 INFO com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] Completed shut down of DiscoveryClient
+2023-03-04 10:27:52,816 INFO com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] Completed shut down of DiscoveryClient
+2023-03-04 15:10:58,765 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-03-04 15:10:58,768 INFO org.springframework.boot.StartupInfoLogger [main] Starting NotificationApplication using Java 17.0.6 on hdurmaz.local with PID 14003 (/Users/hdurmaz/IdeaProjects/banking-application-credit-service/notification/target/classes started by hdurmaz in /Users/hdurmaz/IdeaProjects/banking-application-credit-service)
+2023-03-04 15:10:58,768 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-04 15:10:58,781 INFO org.springframework.boot.logging.DeferredLog [main] Fetching config from server at : http://localhost:8088
+2023-03-04 15:10:58,781 INFO org.springframework.boot.logging.DeferredLog [main] Located environment: name=notification, profiles=[default], label=null, version=61a1e61983dadc69b574dbb975e3aeffbd62a78b, state=null
+2023-03-04 15:10:59,211 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-04 15:10:59,269 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interfaces.
+2023-03-04 15:10:59,413 INFO org.springframework.core.log.LogAccessor [main] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-03-04 15:10:59,419 INFO org.springframework.core.log.LogAccessor [main] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-03-04 15:10:59,464 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=36244d16-9a8d-38ac-a3fc-201be1afd638
+2023-03-04 15:10:59,599 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:10:59,604 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:10:59,608 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:10:59,610 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'bindersHealthContributor' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthContributor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:10:59,613 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'bindersHealthIndicatorListener' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthIndicatorListener] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:10:59,616 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration' of type [org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration$$EnhancerBySpringCGLIB$$8315c2f7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:10:59,621 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'rabbitExtendedPropertiesDefaultMappingsProvider' of type [org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration$$Lambda$719/0x00000008011e3c30] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:10:59,623 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'BindingHandlerAdvise' of type [org.springframework.cloud.stream.config.BindingHandlerAdvise] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:10:59,624 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:10:59,625 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:10:59,626 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$720/0x00000008011e3e50] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:10:59,628 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:10:59,633 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spelConverter' of type [org.springframework.cloud.stream.config.SpelExpressionConverterConfiguration$SpelConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:10:59,635 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spring.jmx-org.springframework.boot.autoconfigure.jmx.JmxProperties' of type [org.springframework.boot.autoconfigure.jmx.JmxProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:10:59,639 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:10:59,641 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:10:59,656 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:10:59,789 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8082 (http)
+2023-03-04 15:10:59,792 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2023-03-04 15:10:59,793 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-03-04 15:10:59,793 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-03-04 15:10:59,842 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-03-04 15:10:59,842 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1060 ms
+2023-03-04 15:11:00,561 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-04 15:11:00,580 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-03-04 15:11:00,638 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-04 15:11:00,669 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-04 15:11:00,741 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-04 15:11:00,750 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-03-04 15:11:00,966 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-04 15:11:00,969 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-04 15:11:01,189 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-04 15:11:01,682 INFO org.springframework.core.log.LogAccessor [main] Channel 'notification.springCloudBusInput' has 1 subscriber(s).
+2023-03-04 15:11:01,802 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses RestTemplate.
+2023-03-04 15:11:01,875 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-03-04 15:11:01,911 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 25 endpoint(s) beneath base path '/actuator'
+2023-03-04 15:11:02,044 INFO org.springframework.integration.monitor.IntegrationMBeanExporter [main] Registering MessageChannel errorChannel
+2023-03-04 15:11:02,059 INFO org.springframework.integration.monitor.IntegrationMBeanExporter [main] Registering MessageChannel springCloudBusInput
+2023-03-04 15:11:02,069 INFO org.springframework.integration.monitor.IntegrationMBeanExporter [main] Registering MessageChannel nullChannel
+2023-03-04 15:11:02,075 INFO org.springframework.integration.monitor.IntegrationMBeanExporter [main] Registering MessageHandler _org.springframework.integration.errorLogger
+2023-03-04 15:11:02,089 INFO org.springframework.core.log.LogAccessor [main] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-03-04 15:11:02,089 INFO org.springframework.core.log.LogAccessor [main] Channel 'notification.errorChannel' has 1 subscriber(s).
+2023-03-04 15:11:02,089 INFO org.springframework.core.log.LogAccessor [main] started bean '_org.springframework.integration.errorLogger'
+2023-03-04 15:11:02,094 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [main] Setting initial instance status as: STARTING
+2023-03-04 15:11:02,108 INFO com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2023-03-04 15:11:02,109 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [main] Resolving eureka endpoints via configuration
+2023-03-04 15:11:02,117 INFO com.netflix.discovery.DiscoveryClient [main] Disable delta property : false
+2023-03-04 15:11:02,118 INFO com.netflix.discovery.DiscoveryClient [main] Single vip registry refresh property : null
+2023-03-04 15:11:02,118 INFO com.netflix.discovery.DiscoveryClient [main] Force full registry fetch : false
+2023-03-04 15:11:02,118 INFO com.netflix.discovery.DiscoveryClient [main] Application is null : false
+2023-03-04 15:11:02,118 INFO com.netflix.discovery.DiscoveryClient [main] Registered Applications size is zero : true
+2023-03-04 15:11:02,118 INFO com.netflix.discovery.DiscoveryClient [main] Application version is -1: true
+2023-03-04 15:11:02,118 INFO com.netflix.discovery.DiscoveryClient [main] Getting all instance registry info from the eureka server
+2023-03-04 15:11:02,184 INFO com.netflix.discovery.DiscoveryClient [main] The response status is 200
+2023-03-04 15:11:02,185 INFO com.netflix.discovery.DiscoveryClient [main] Starting heartbeat executor: renew interval is: 30
+2023-03-04 15:11:02,186 INFO com.netflix.discovery.InstanceInfoReplicator [main] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-03-04 15:11:02,188 INFO com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1677931862188 with initial instances count: 2
+2023-03-04 15:11:02,192 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [main] Registering application NOTIFICATION with eureka with status UP
+2023-03-04 15:11:02,193 INFO com.netflix.discovery.DiscoveryClient$3 [main] Saw local status change event StatusChangeEvent [timestamp=1677931862193, current=UP, previous=STARTING]
+2023-03-04 15:11:02,193 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_NOTIFICATION/192.168.1.39:notification:8082: registering service...
+2023-03-04 15:11:02,211 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_NOTIFICATION/192.168.1.39:notification:8082 - registration status: 204
+2023-03-04 15:11:02,261 INFO org.springframework.cloud.stream.binder.rabbit.provisioning.RabbitExchangeQueueProvisioner [main] declaring queue for inbound: springCloudBus.anonymous.pPo6M7h9RE27CrknBQQADQ, bound to: springCloudBus
+2023-03-04 15:11:02,262 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [main] Attempting to connect to: [localhost:5672]
+2023-03-04 15:11:02,291 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [main] Created new connection: rabbitConnectionFactory#69926b6e:0/SimpleConnection@4f8d7222 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 53758]
+2023-03-04 15:11:02,315 INFO org.springframework.core.log.LogAccessor [main] Channel 'springCloudBus.anonymous.pPo6M7h9RE27CrknBQQADQ.errors' has 1 subscriber(s).
+2023-03-04 15:11:02,316 INFO org.springframework.core.log.LogAccessor [main] Channel 'springCloudBus.anonymous.pPo6M7h9RE27CrknBQQADQ.errors' has 2 subscriber(s).
+2023-03-04 15:11:02,323 INFO org.springframework.core.log.LogAccessor [main] started bean 'inbound.springCloudBus.anonymous.pPo6M7h9RE27CrknBQQADQ'
+2023-03-04 15:11:02,323 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2023-03-04 15:11:02,335 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8082 (http) with context path ''
+2023-03-04 15:11:02,336 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [main] Updating port to 8082
+2023-03-04 15:11:02,353 INFO org.springframework.integration.monitor.IntegrationMBeanExporter [main] Registering MessageChannel springCloudBus.anonymous.pPo6M7h9RE27CrknBQQADQ.errors
+2023-03-04 15:11:02,399 INFO org.springframework.boot.StartupInfoLogger [main] Started NotificationApplication in 5.083 seconds (JVM running for 5.396)
+2023-03-04 15:11:02,851 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(2)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-04 15:11:02,851 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(2)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2023-03-04 15:11:02,853 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(2)-127.0.0.1] Completed initialization in 2 ms
+2023-03-04 15:16:02,131 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-03-04 15:18:55,180 INFO org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration$1 [Thread-2] Flushing remaining spans on shutdown
+2023-03-04 15:18:55,184 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [SpringApplicationShutdownHook] Unregistering application NOTIFICATION with eureka with status DOWN
+2023-03-04 15:18:55,185 INFO com.netflix.discovery.DiscoveryClient$3 [SpringApplicationShutdownHook] Saw local status change event StatusChangeEvent [timestamp=1677932335185, current=DOWN, previous=UP]
+2023-03-04 15:18:55,186 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_NOTIFICATION/192.168.1.39:notification:8082: registering service...
+2023-03-04 15:18:55,198 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] Waiting for workers to finish.
+2023-03-04 15:18:55,199 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_NOTIFICATION/192.168.1.39:notification:8082 - registration status: 204
+2023-03-04 15:18:55,960 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] Successfully waited for workers to finish.
+2023-03-04 15:18:55,999 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer [SpringApplicationShutdownHook] Waiting for workers to finish.
+2023-03-04 15:18:59,536 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-03-04 15:18:59,538 INFO org.springframework.boot.StartupInfoLogger [main] Starting NotificationApplication using Java 17.0.6 on hdurmaz.local with PID 15304 (/Users/hdurmaz/IdeaProjects/banking-application-credit-service/notification/target/classes started by hdurmaz in /Users/hdurmaz/IdeaProjects/banking-application-credit-service)
+2023-03-04 15:18:59,539 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-04 15:18:59,552 INFO org.springframework.boot.logging.DeferredLog [main] Fetching config from server at : http://localhost:8088
+2023-03-04 15:18:59,553 INFO org.springframework.boot.logging.DeferredLog [main] Located environment: name=notification, profiles=[default], label=null, version=61a1e61983dadc69b574dbb975e3aeffbd62a78b, state=null
+2023-03-04 15:18:59,995 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-04 15:19:00,052 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interfaces.
+2023-03-04 15:19:00,205 INFO org.springframework.core.log.LogAccessor [main] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-03-04 15:19:00,212 INFO org.springframework.core.log.LogAccessor [main] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-03-04 15:19:00,260 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=36244d16-9a8d-38ac-a3fc-201be1afd638
+2023-03-04 15:19:00,395 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:19:00,400 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:19:00,404 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:19:00,405 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'bindersHealthContributor' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthContributor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:19:00,409 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'bindersHealthIndicatorListener' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthIndicatorListener] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:19:00,416 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration' of type [org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration$$EnhancerBySpringCGLIB$$449eb742] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:19:00,424 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'rabbitExtendedPropertiesDefaultMappingsProvider' of type [org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration$$Lambda$719/0x00000008011e3c30] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:19:00,428 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'BindingHandlerAdvise' of type [org.springframework.cloud.stream.config.BindingHandlerAdvise] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:19:00,431 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:19:00,434 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:19:00,435 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$720/0x00000008011e3e50] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:19:00,437 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:19:00,442 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spelConverter' of type [org.springframework.cloud.stream.config.SpelExpressionConverterConfiguration$SpelConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:19:00,446 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spring.jmx-org.springframework.boot.autoconfigure.jmx.JmxProperties' of type [org.springframework.boot.autoconfigure.jmx.JmxProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:19:00,449 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:19:00,452 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:19:00,480 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-04 15:19:00,610 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8082 (http)
+2023-03-04 15:19:00,614 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2023-03-04 15:19:00,614 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-03-04 15:19:00,614 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-03-04 15:19:00,667 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-03-04 15:19:00,668 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1114 ms
+2023-03-04 15:19:01,391 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-04 15:19:01,410 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-03-04 15:19:01,463 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-04 15:19:01,496 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-04 15:19:01,574 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-04 15:19:01,584 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-03-04 15:19:01,809 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-04 15:19:01,812 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-04 15:19:02,036 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-04 15:19:02,509 INFO org.springframework.core.log.LogAccessor [main] Channel 'notification.springCloudBusInput' has 1 subscriber(s).
+2023-03-04 15:19:02,630 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses RestTemplate.
+2023-03-04 15:19:02,700 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-03-04 15:19:02,735 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 25 endpoint(s) beneath base path '/actuator'
+2023-03-04 15:19:02,860 INFO org.springframework.integration.monitor.IntegrationMBeanExporter [main] Registering MessageChannel errorChannel
+2023-03-04 15:19:02,875 INFO org.springframework.integration.monitor.IntegrationMBeanExporter [main] Registering MessageChannel springCloudBusInput
+2023-03-04 15:19:02,885 INFO org.springframework.integration.monitor.IntegrationMBeanExporter [main] Registering MessageChannel nullChannel
+2023-03-04 15:19:02,892 INFO org.springframework.integration.monitor.IntegrationMBeanExporter [main] Registering MessageHandler _org.springframework.integration.errorLogger
+2023-03-04 15:19:02,908 INFO org.springframework.core.log.LogAccessor [main] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-03-04 15:19:02,908 INFO org.springframework.core.log.LogAccessor [main] Channel 'notification.errorChannel' has 1 subscriber(s).
+2023-03-04 15:19:02,908 INFO org.springframework.core.log.LogAccessor [main] started bean '_org.springframework.integration.errorLogger'
+2023-03-04 15:19:02,913 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [main] Setting initial instance status as: STARTING
+2023-03-04 15:19:02,929 INFO com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2023-03-04 15:19:02,932 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [main] Resolving eureka endpoints via configuration
+2023-03-04 15:19:02,940 INFO com.netflix.discovery.DiscoveryClient [main] Disable delta property : false
+2023-03-04 15:19:02,941 INFO com.netflix.discovery.DiscoveryClient [main] Single vip registry refresh property : null
+2023-03-04 15:19:02,941 INFO com.netflix.discovery.DiscoveryClient [main] Force full registry fetch : false
+2023-03-04 15:19:02,941 INFO com.netflix.discovery.DiscoveryClient [main] Application is null : false
+2023-03-04 15:19:02,941 INFO com.netflix.discovery.DiscoveryClient [main] Registered Applications size is zero : true
+2023-03-04 15:19:02,942 INFO com.netflix.discovery.DiscoveryClient [main] Application version is -1: true
+2023-03-04 15:19:02,942 INFO com.netflix.discovery.DiscoveryClient [main] Getting all instance registry info from the eureka server
+2023-03-04 15:19:03,010 INFO com.netflix.discovery.DiscoveryClient [main] The response status is 200
+2023-03-04 15:19:03,011 INFO com.netflix.discovery.DiscoveryClient [main] Starting heartbeat executor: renew interval is: 30
+2023-03-04 15:19:03,013 INFO com.netflix.discovery.InstanceInfoReplicator [main] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-03-04 15:19:03,015 INFO com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1677932343014 with initial instances count: 3
+2023-03-04 15:19:03,019 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [main] Registering application NOTIFICATION with eureka with status UP
+2023-03-04 15:19:03,020 INFO com.netflix.discovery.DiscoveryClient$3 [main] Saw local status change event StatusChangeEvent [timestamp=1677932343020, current=UP, previous=STARTING]
+2023-03-04 15:19:03,020 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_NOTIFICATION/192.168.1.39:notification:8082: registering service...
+2023-03-04 15:19:03,040 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_NOTIFICATION/192.168.1.39:notification:8082 - registration status: 204
+2023-03-04 15:19:03,091 INFO org.springframework.cloud.stream.binder.rabbit.provisioning.RabbitExchangeQueueProvisioner [main] declaring queue for inbound: springCloudBus.anonymous.4x29oo7YS5e1ukeQngzJug, bound to: springCloudBus
+2023-03-04 15:19:03,093 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [main] Attempting to connect to: [localhost:5672]
+2023-03-04 15:19:03,119 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [main] Created new connection: rabbitConnectionFactory#384f0e32:0/SimpleConnection@102ee705 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 54040]
+2023-03-04 15:19:03,147 INFO org.springframework.core.log.LogAccessor [main] Channel 'springCloudBus.anonymous.4x29oo7YS5e1ukeQngzJug.errors' has 1 subscriber(s).
+2023-03-04 15:19:03,147 INFO org.springframework.core.log.LogAccessor [main] Channel 'springCloudBus.anonymous.4x29oo7YS5e1ukeQngzJug.errors' has 2 subscriber(s).
+2023-03-04 15:19:03,155 INFO org.springframework.core.log.LogAccessor [main] started bean 'inbound.springCloudBus.anonymous.4x29oo7YS5e1ukeQngzJug'
+2023-03-04 15:19:03,156 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2023-03-04 15:19:03,164 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8082 (http) with context path ''
+2023-03-04 15:19:03,165 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [main] Updating port to 8082
+2023-03-04 15:19:03,183 INFO org.springframework.integration.monitor.IntegrationMBeanExporter [main] Registering MessageChannel springCloudBus.anonymous.4x29oo7YS5e1ukeQngzJug.errors
+2023-03-04 15:19:03,236 INFO org.springframework.boot.StartupInfoLogger [main] Started NotificationApplication in 5.504 seconds (JVM running for 6.053)
+2023-03-04 15:19:03,348 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(3)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-04 15:19:03,349 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2023-03-04 15:19:03,350 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Completed initialization in 1 ms
+2023-03-04 15:24:02,956 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-03-04 15:29:02,971 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-03-04 15:34:02,986 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-03-04 15:39:03,003 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-03-04 15:44:02,972 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-03-04 15:49:02,985 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-03-04 15:54:02,998 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-03-04 15:59:03,000 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-03-04 16:01:06,566 INFO org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration$1 [Thread-2] Flushing remaining spans on shutdown
+2023-03-04 16:01:06,570 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [SpringApplicationShutdownHook] Unregistering application NOTIFICATION with eureka with status DOWN
+2023-03-04 16:01:06,570 INFO com.netflix.discovery.DiscoveryClient$3 [SpringApplicationShutdownHook] Saw local status change event StatusChangeEvent [timestamp=1677934866570, current=DOWN, previous=UP]
+2023-03-04 16:01:06,571 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_NOTIFICATION/192.168.1.39:notification:8082: registering service...
+2023-03-04 16:01:06,579 INFO com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient [DiscoveryClient-InstanceInfoReplicator-0] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on POST request for "http://localhost:8761/eureka/apps/NOTIFICATION": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/NOTIFICATION": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 21 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 34 more
+
+2023-03-04 16:01:06,580 WARN com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient [DiscoveryClient-InstanceInfoReplicator-0] Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/NOTIFICATION": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
+2023-03-04 16:01:06,581 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] Waiting for workers to finish.
+2023-03-04 16:01:06,586 INFO com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient [DiscoveryClient-InstanceInfoReplicator-0] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/NOTIFICATION": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/NOTIFICATION": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 35 more
+
+2023-03-04 16:01:06,586 WARN com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient [DiscoveryClient-InstanceInfoReplicator-0] Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/NOTIFICATION": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
+2023-03-04 16:01:06,587 WARN com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_NOTIFICATION/192.168.1.39:notification:8082 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-03-04 16:01:06,588 WARN com.netflix.discovery.InstanceInfoReplicator [DiscoveryClient-InstanceInfoReplicator-0] There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-03-04 16:01:06,800 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] Successfully waited for workers to finish.
+2023-03-04 16:01:06,826 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer [SpringApplicationShutdownHook] Waiting for workers to finish.
+2023-03-04 16:01:07,786 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer [SpringApplicationShutdownHook] Successfully waited for workers to finish.
+2023-03-04 16:01:07,787 INFO org.springframework.core.log.LogAccessor [SpringApplicationShutdownHook] stopped bean 'inbound.springCloudBus.anonymous.4x29oo7YS5e1ukeQngzJug'
+2023-03-04 16:01:07,792 INFO org.springframework.core.log.LogAccessor [SpringApplicationShutdownHook] Channel 'notification.springCloudBus.anonymous.4x29oo7YS5e1ukeQngzJug.errors' has 1 subscriber(s).
+2023-03-04 16:01:07,795 INFO org.springframework.core.log.LogAccessor [SpringApplicationShutdownHook] Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-03-04 16:01:07,795 INFO org.springframework.core.log.LogAccessor [SpringApplicationShutdownHook] Channel 'notification.errorChannel' has 0 subscriber(s).
+2023-03-04 16:01:07,796 INFO org.springframework.core.log.LogAccessor [SpringApplicationShutdownHook] stopped bean '_org.springframework.integration.errorLogger'
+2023-03-04 16:01:07,800 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer [SpringApplicationShutdownHook] Shutdown ignored - container is already stopped
+2023-03-04 16:01:07,803 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-04 16:01:08,820 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-03-04 16:01:08,821 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-03-04 16:01:08,822 INFO com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] Shutting down DiscoveryClient ...
+2023-03-04 16:01:11,829 INFO com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] Unregistering ...
+2023-03-04 16:01:11,836 INFO com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient [SpringApplicationShutdownHook] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/NOTIFICATION/192.168.1.39:notification:8082": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/NOTIFICATION/192.168.1.39:notification:8082": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:197)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:190)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:213)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1163)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 40 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 53 more
+
+2023-03-04 16:01:11,837 WARN com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient [SpringApplicationShutdownHook] Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/NOTIFICATION/192.168.1.39:notification:8082": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
+2023-03-04 16:01:11,838 ERROR com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] DiscoveryClient_NOTIFICATION/192.168.1.39:notification:8082 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:197)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:190)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:213)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1163)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-03-04 16:01:11,845 INFO com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] Completed shut down of DiscoveryClient
