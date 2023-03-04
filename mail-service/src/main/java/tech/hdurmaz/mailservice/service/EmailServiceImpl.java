@@ -18,6 +18,7 @@ import javax.mail.internet.MimeMultipart;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
+import org.springframework.util.ResourceUtils;
 import org.springframework.web.multipart.MultipartFile;
 import tech.hdurmaz.clients.mail.CustomerRegistrationMail;
 import tech.hdurmaz.clients.mail.SendFileMailAccountsRequest;
@@ -86,15 +87,10 @@ public class EmailServiceImpl implements EmailService {
       BodyPart messageBodyPart = new MimeBodyPart();
       messageBodyPart.setText("TEXT");
 
-//            Multipart multipart = new MimeMultipart();
-//            multipart.addBodyPart(messageBodyPart);
-//
-//            MimeBodyPart attachmentPart = new MimeBodyPart();
-//            //attachmentPart.attachFile(convert(request.multipartFile()));
-//            multipart.addBodyPart(attachmentPart);
-//
-//            message.setContent(multipart);
-      message.setContent(request, "content");
+      Multipart multipart = new MimeMultipart();
+      multipart.addBodyPart(messageBodyPart);
+
+      message.setContent("<html><title>That was 2 arg setContent</title></html>", "text/html");
       Transport.send(message);
     } catch (Exception e) {
       log.error("An error occurred while sending email. Exception: " + e.getMessage());
