@@ -3,14 +3,15 @@ package tech.hdurmaz.mailservice.service;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.Objects;
 import java.util.Properties;
 import javax.mail.BodyPart;
 import javax.mail.Message;
+import javax.mail.Message.RecipientType;
 import javax.mail.Multipart;
 import javax.mail.PasswordAuthentication;
 import javax.mail.Session;
-import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
@@ -18,7 +19,6 @@ import javax.mail.internet.MimeMultipart;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
-import org.springframework.util.ResourceUtils;
 import org.springframework.web.multipart.MultipartFile;
 import tech.hdurmaz.clients.mail.CustomerRegistrationMail;
 import tech.hdurmaz.clients.mail.SendFileMailAccountsRequest;
@@ -68,7 +68,8 @@ public class EmailServiceImpl implements EmailService {
       multipart.addBodyPart(attachmentPart);
 
       message.setContent(multipart);
-      Transport.send(message);
+      log.info("Sending mail to :" + Arrays.toString(message.getRecipients(RecipientType.TO)));
+      //Transport.send(message);
     } catch (Exception e) {
       log.error("An error occurred while sending email. Exception: " + e.getMessage());
     }
@@ -91,7 +92,8 @@ public class EmailServiceImpl implements EmailService {
       multipart.addBodyPart(messageBodyPart);
 
       message.setContent("<html><title>That was 2 arg setContent</title></html>", "text/html");
-      Transport.send(message);
+      log.info("Sending mail to :" + Arrays.toString(message.getRecipients(RecipientType.TO)));
+      //Transport.send(message);
     } catch (Exception e) {
       log.error("An error occurred while sending email. Exception: " + e.getMessage());
     }
