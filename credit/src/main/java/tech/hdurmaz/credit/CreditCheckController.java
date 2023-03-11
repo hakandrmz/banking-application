@@ -28,6 +28,7 @@ public class CreditCheckController {
   @GetMapping(path = "historyList/{identityNumber}")
   public List<CreditCheckHistoryListResponse> getCreditHistoryListByIdentityNumber(
       @PathVariable("identityNumber") String identityNumber) {
+    log.info("Customer credit history list checked. - " + identityNumber);
     return creditCheckService.checkCreditAmountHistoryByIdentityNumber(identityNumber);
   }
 

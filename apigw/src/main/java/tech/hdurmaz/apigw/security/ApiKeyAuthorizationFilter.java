@@ -20,7 +20,7 @@ import reactor.core.publisher.Mono;
 @AllArgsConstructor
 public class ApiKeyAuthorizationFilter implements GlobalFilter, Ordered {
 
-  private final String API_KEY = "ApiKey";
+  private static final String API_KEY = "ApiKey";
   private final FakeApiAuthorizationChecker fakeApiAuthorizationChecker;
 
   @Override
@@ -31,6 +31,9 @@ public class ApiKeyAuthorizationFilter implements GlobalFilter, Ordered {
     String application = attribute.getId();
 
     List<String> apiKey = exchange.getRequest().getHeaders().get(API_KEY);
+    if (Objects.nonNull(apiKey)) {
+      log.info("Got apiKey from request. :" + apiKey);
+    }
 
     if (application == null
         || Objects.requireNonNull(apiKey).isEmpty()

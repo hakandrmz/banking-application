@@ -26,6 +26,7 @@ public class CreditCheckService {
         .build());
 
     return CreditCheckResponse.builder()
+        .message("Kredi başvurunuz sonuçlandırılmıştır.")
         .identityNumber(identityNumber)
         .amount(creditAmount)
         .build();

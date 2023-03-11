@@ -53,6 +53,7 @@ public class BankingController {
   @GetMapping(path = "/creditHistory/{identityNumber}")
   public List<CreditCheckHistoryListResponse> getCreditScoresByCustomerIdResponse(
       @PathVariable("identityNumber") String identityNumber) {
+    log.info("Getting credit check history by identity number." + identityNumber);
     return customerService.getCreditScoresByCustomerId(identityNumber);
   }
 }

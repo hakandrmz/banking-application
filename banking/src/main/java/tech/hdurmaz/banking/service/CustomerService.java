@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import tech.hdurmaz.amqp.RabbitMQMessageProducer;
+import tech.hdurmaz.banking.config.Constants;
+import tech.hdurmaz.banking.config.PropertiesConfigurer;
 import tech.hdurmaz.banking.exceptions.CustomerAlreadyExistException;
 import tech.hdurmaz.banking.models.Customer;
 import tech.hdurmaz.banking.repository.CustomerRepository;
@@ -26,39 +28,41 @@ public class CustomerService {
   private final CustomerRepository customerRepository;
   private final CreditClient creditClient;
   private final RabbitMQMessageProducer rabbitMQMessageProducer;
+  private final PropertiesConfigurer propertiesConfigurer;
 
   public void registerCustomer(CustomerRegistrationRequest customerRequest) {
 
     checkCustomerIsAlreadyExist(customerRequest.identityNumber());
+
+    sendRegistrationMailNotificationToCustomer(customerRequest);
 
     Customer customer = Customer.builder().firstName(customerRequest.firstName())
         .lastName(customerRequest.lastName()).email(customerRequest.email())
         .income(customerRequest.income()).phoneNumber(customerRequest.phoneNumber())
         .identityNumber(customerRequest.identityNumber()).build();
 
-    sendRegistrationMailNotificationToCustomer(customerRequest);
-
     customerRepository.save(customer);
   }
 
   private void sendRegistrationMailNotificationToCustomer(
       CustomerRegistrationRequest customerRequest) {
-    CustomerRegistrationMail customerRegistrationMail = new CustomerRegistrationMail(
+    var customerRegistrationMail = new CustomerRegistrationMail(
         customerRequest.email());
     rabbitMQMessageProducer
         .publish(
             customerRegistrationMail,
-            "internal.exchange",
-            "internal.mail.routing-key");
+            propertiesConfigurer.getValue(Constants.RABBITMQ_MAIL_EXCHANGE),
+            propertiesConfigurer.getValue(Constants.RABBITMQ_MAIL_ROUTING_KEY));
 
     var notification = new NotificationRequest(
         customerRequest.identityNumber(),
         "Customer identity number: " + customerRequest.identityNumber(),
-        "Kredi sonucunuz hesaplanıyor. "
+        "Kredi sonucunuz hesaplanıyor."
     );
     rabbitMQMessageProducer
-        .publish(notification, "internal.exchange",
-            "internal.notification.routing-key"
+        .publish(notification,
+            propertiesConfigurer.getValue(Constants.RABBITMQ_NOTIFICATION_EXCHANGE),
+            propertiesConfigurer.getValue(Constants.RABBITMQ_NOTIFICATION_ROUTING_KEY)
         );
   }
 
@@ -87,8 +91,9 @@ public class CustomerService {
     );
 
     rabbitMQMessageProducer
-        .publish(notification, "internal.exchange",
-            "internal.notification.routing-key"
+        .publish(notification,
+            propertiesConfigurer.getValue(Constants.RABBITMQ_NOTIFICATION_EXCHANGE),
+            propertiesConfigurer.getValue(Constants.RABBITMQ_NOTIFICATION_ROUTING_KEY)
         );
 
     return CustomerCreditResponse.builder().customerId(creditCheckResponse.identityNumber())
