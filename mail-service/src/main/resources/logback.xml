@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
 
+  <property name="LOGS" value="./logs"/>
+  <property name="APPLICATION_NAME" value="MAIL_SERVICE"/>
+
   <appender class="ch.qos.logback.core.ConsoleAppender"
     name="Console">
     <layout class="ch.qos.logback.classic.PatternLayout">
@@ -23,7 +26,7 @@
       </fileNamePattern>
       <timeBasedFileNamingAndTriggeringPolicy
         class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-        <maxFileSize>1MB</maxFileSize>
+        <maxFileSize>5MB</maxFileSize>
       </timeBasedFileNamingAndTriggeringPolicy>
     </rollingPolicy>
   </appender>
@@ -68,9 +71,6 @@
     <maxChunkSize>508</maxChunkSize>
     <useCompression>true</useCompression>
   </appender>
-
-  <property name="LOGS" value="./logs"/>
-  <property name="APPLICATION_NAME" value="MAIL_SERVICE"/>
 
   <root level="info">
     <appender-ref ref="EMAIL"/>

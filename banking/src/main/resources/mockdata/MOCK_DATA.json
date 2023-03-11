@@ -1,0 +1,34 @@
+[
+  {
+    "firstName": "Porty",
+    "lastName": "Whitmarsh",
+    "email": "pwhitmarsh0@t.co",
+    "income": 26472,
+    "phoneNumber": "628-254-2036",
+    "identityNumber": "2815754029"
+  },
+  {
+    "firstName": "Christabella",
+    "lastName": "Duesberry",
+    "email": "cduesberry1@sourceforge.net",
+    "income": 31617,
+    "phoneNumber": "210-322-3753",
+    "identityNumber": "6776952167"
+  },
+  {
+    "firstName": "Cele",
+    "lastName": "Mounfield",
+    "email": "cmounfield2@whitehouse.gov",
+    "income": 20129,
+    "phoneNumber": "173-362-7659",
+    "identityNumber": "4262807592"
+  },
+  {
+    "firstName": "Susi",
+    "lastName": "Ingleby",
+    "email": "singleby3@craigslist.org",
+    "income": 23133,
+    "phoneNumber": "654-880-7109",
+    "identityNumber": "6823383623"
+  }
+]
