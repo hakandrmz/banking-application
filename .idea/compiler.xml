@@ -9,7 +9,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="notification" />
         <module name="apigw" />
-        <module name="config-server" />
         <module name="clients" />
         <module name="amqp" />
         <module name="credit" />
@@ -18,6 +17,9 @@
         <module name="banking" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="config-server" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
