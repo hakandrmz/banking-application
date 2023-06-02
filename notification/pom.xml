@@ -61,6 +61,10 @@
       <groupId>org.springframework.cloud</groupId>
     </dependency>
     <dependency>
+      <groupId>com.github.ben-manes.caffeine</groupId>
+      <artifactId>caffeine</artifactId>
+    </dependency>
+    <dependency>
       <artifactId>spring-cloud-sleuth-zipkin</artifactId>
       <groupId>org.springframework.cloud</groupId>
     </dependency>

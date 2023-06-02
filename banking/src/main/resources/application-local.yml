@@ -1,0 +1,47 @@
+server:
+  port: 8080
+message:
+  Hello from banking.yml :)
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/banking
+    password: hdurmaz
+    username: hdurmaz
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+  zipkin:
+    base-url: http://localhost:9411
+  rabbitmq:
+    addresses: localhost:5672
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+springdoc:
+  swagger-ui:
+    defaultModelsExpandDepth: '-1'
+    doc-expansion: 'null'
+  paths-to-exclude: /swagger-resources/**
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true
+rabbitmq:
+  mail:
+    exchange: internal.exchange
+    routing-key: internal.mail.routing-key
+  notification:
+    exchange: internal.exchange
+    routing-key: internal.notification.routing-key
