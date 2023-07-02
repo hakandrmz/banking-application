@@ -3,6 +3,7 @@
   xmlns="http://maven.apache.org/POM/4.0.0"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <artifactId>mail-service</artifactId>
+  <packaging>jar</packaging>
   <build>
     <plugins>
       <plugin>
@@ -19,6 +20,19 @@
       </plugin>
     </plugins>
   </build>
+  <profiles>
+    <profile>
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>jib-maven-plugin</artifactId>
+            <groupId>com.google.cloud.tools</groupId>
+          </plugin>
+        </plugins>
+      </build>
+      <id>build-docker-image</id>
+    </profile>
+  </profiles>
   <dependencies>
     <dependency>
       <artifactId>spring-boot-starter-actuator</artifactId>
@@ -52,12 +66,16 @@
       <groupId>org.springframework.boot</groupId>
     </dependency>
     <dependency>
-      <artifactId>spring-cloud-starter-sleuth</artifactId>
-      <groupId>org.springframework.cloud</groupId>
+      <artifactId>micrometer-registry-prometheus</artifactId>
+      <groupId>io.micrometer</groupId>
     </dependency>
     <dependency>
-      <artifactId>spring-cloud-sleuth-zipkin</artifactId>
-      <groupId>org.springframework.cloud</groupId>
+      <artifactId>micrometer-tracing-bridge-brave</artifactId>
+      <groupId>io.micrometer</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>zipkin-reporter-brave</artifactId>
+      <groupId>io.zipkin.reporter2</groupId>
     </dependency>
     <dependency>
       <artifactId>spring-boot-starter-mail</artifactId>
@@ -71,10 +89,7 @@
       <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
       <groupId>org.springframework.cloud</groupId>
     </dependency>
-    <dependency>
-      <artifactId>spring-cloud-starter-config</artifactId>
-      <groupId>org.springframework.cloud</groupId>
-    </dependency>
+
     <dependency>
       <artifactId>amqp</artifactId>
       <groupId>tech.hdurmaz</groupId>

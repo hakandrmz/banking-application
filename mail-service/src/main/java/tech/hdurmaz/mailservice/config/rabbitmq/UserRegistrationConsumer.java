@@ -12,11 +12,9 @@ import tech.hdurmaz.mailservice.service.EmailService;
 @Slf4j
 public class UserRegistrationConsumer {
 
-  private final EmailService emailService;
-
   @RabbitListener(queues = "${rabbitmq.queues.mail}")
   public void consumer(CustomerRegistrationMail request) {
     log.info("Consumed {} from queue.", request);
-    emailService.sendRegistrationEmail(request);
+    //emailService.sendRegistrationEmail(request);
   }
 }

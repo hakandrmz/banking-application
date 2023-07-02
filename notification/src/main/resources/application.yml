@@ -1,5 +1,3 @@
 spring:
   application:
     name: notification
-  config:
-    import: optional:configserver:http://localhost:8088
