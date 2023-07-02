@@ -3,7 +3,6 @@ package tech.hdurmaz.mailservice;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication(
     scanBasePackages = {
@@ -12,7 +11,6 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
     }
 )
 @ConfigurationPropertiesScan
-@EnableEurekaClient
 public class MailServiceApplication {
 
   public static void main(String[] args) {
